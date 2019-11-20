@@ -25,5 +25,5 @@ As a Front End Engineer, I like working with a GraphQL API because -
 
 ## Okay, cool. Where should I start?
 
-## I get that with GraphQL, you need to wait for the backend engineers to transform the API into GraphQL? 
+## I get that with GraphQL, you need to wait for the backend engineers to write the GraphQL API?
 
