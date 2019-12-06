@@ -8,24 +8,33 @@ I love talking about GraphQL and listening to companies adopting or thinking of 
 
 As a Front End Engineer, I like working with a GraphQL API because -
 
-1. Instantly test queries and mutations. 
-2. Less data = less state management
-3. Offload heavy lifting to the server 
-4. Instant documentation 
-
+1. Instantly test queries and mutations using GraphiQL or playground. 
+2. Less data = lighter state management. 
+3. Offload heavy lifting to the server through resolvers. 
+4. Instant documentation.
 
 
 ## How is it better than REST? 
+1. One endpoint to fetch all resources. 
+2. Avoid overfetching of data (getting too many fields when only a few fields are needed).
+3. Avoid underfetching of data  (having to call multiple APIs because one API doesn't give back all the information needed).
 
-## I get that it will be useful for mobile applications, but how is it useful on the web?
+
+
+## I get that it will be useful for mobile applications where getting the payload size small is important, but how is it useful on the web?
+
 
 ## Our services are written in REST. It will take months to move them over to GraphQL 
 
 ## Isn't GraphQL helpful when you are writing close to the database? 
 
-## Okay, cool. Where should I start?
+## I get that with GraphQL, you need to wait for the backend engineers to write the GraphQL API?
 
-## I get that with GraphQL, you need to wait for the backend engineers to transform the API into GraphQL? 
+## Is it a query language for database? 
+
+## Can GraphQL be used without JS? 
+
+## Okay, cool. Where should I start?
 
 GraphQL is a database
 
