@@ -36,25 +36,54 @@ As a Front End Engineer, I like working with a GraphQL API because -
 
 ## Okay, cool. Where should I start?
 
+
+## Database
 GraphQL is a database
-
-1. Didn't really get GraphQL introspectability & how to take advantage of the typed schema as both GraphQL & REST send untyped JSON.
-
-
-2. Literally: "GraphQL replace Redux". "Why bother with GraphQL if I've been doing same with SQL". "GraphQL is a fancy JS library"
-
-Interfaces, everyone thinks they automatically add fields to the types that implement them.
-
+ Graphql only worked with graph databases 
+ . GraphQL is something like exposing your database.
+. It's an efficient way to query graph database.
+- It's a complete backend technology, or
+- It's a database technology
+Before starting I thought I would have to rewrite db,  but later I found it is just a wrapper with queries and mutation. Graphql makes life easy
+Probably the biggest confusion I’ve seen is between GraphQL and graph databases.
+GraphQL is very confusing name coz when use word Graph it means Graph like a plotting graph and QL is already a known fact that it is something to do with SQL but graph word doesn’t sit with it. That is why I had/have trouble learning it coz Graph is again a Graph 😂
 When I first heard about GraphQL, I thought it was a programming language that makes charts (like D3) 🤷‍♀️
 
 
+## Resolvers, Queries, Mutations
+ How resolvers are mapped and executed in front of GraphQL types 
+ Interfaces, everyone thinks they automatically add fields to the types that implement them.
+You send in a complex query, and some magical engine works out all of the subqueries to get the data for it, ties it all together and sends it back to the client. Amazing! Only now, two years later do I realise that you basically have to write all that clever stuff yourself. 😩
+- every type needs exactly one resolver
+
+
+## Frontend
+GraphQL can't cache queries and only used for react
+2. Literally: "GraphQL replace Redux". "Why bother with GraphQL if I've been doing same with SQL". "GraphQL is a fancy JS library"
+
+## REST
+A misconception we had was that GraphQL requires a schema compulsorily. We just loved the way a GraphQL query is written and then realized that you can decouple it from execution. 
+
+1. It’s as simple as REST for backend development. This is not true, it can be much trickier for the backend team. Ultimately worth it but there’s more upfront investment.
+
+Is graphql more performant than REST. I mean I know the data coming over the network will be less  in most of the cases for graphql. But apart from this, is there any other performance gains ?
+
+Picking up legacy code in a company saying they use graphql - then realizing they implemented an overbaked REST endpoint!
+
 2. That GraphQL is all or nothing and they would need to replace/rewrite their entire REST API in order to introduce GraphQL into their product
+
+2. GraphQL should behave like REST, with same methods and abstractions.
+- it provides no improvement over using REST
+
+- one can just wrap a GraphQL API with a REST API
+
+
+---
+
+1. Didn't really get GraphQL introspectability & how to take advantage of the typed schema as both GraphQL & REST send untyped JSON.
 
 Not understanding that your schema doesn’t need to be a mirror of your data layer.  2. That GraphQL is a spec, not a product.
 
-You send in a complex query, and some magical engine works out all of the subqueries to get the data for it, ties it all together and sends it back to the client. Amazing! Only now, two years later do I realise that you basically have to write all that clever stuff yourself. 😩
-
- Graphql only worked with graph databases 
 2. Graphql is a programming language, 
 3. Graphql was impliment once and all the endpoints would route to it as long as they have been defined, I didn't  know one has to write custom types and models for each service 🤦🏿‍♀️
 
@@ -65,21 +94,13 @@ Not realizing the order resolvers are called in
 . GraphQL is meant for green field project and it is difficult to introduce in an existing project. 
 2. GraphQL is only for frontend folks
 
-. GraphQL is something like exposing your database.
-
-2. GraphQL should behave like REST, with same methods and abstractions.
-
-
 1. Designing the schema to match to format of the data source is a good idea. It turns out it wasn’t. 
 
 2. Requesting data from a GraphQL server is hard and requires a 3rd party client which is problematic in some languages. A lot of people forget it’s just an HTTP request.
 
 
-- it provides no improvement over using REST
 - it's only useful for graph-based data schemas
 - all actions need to by synchronous
-- one can just wrap a GraphQL API with a REST API
-- every type needs exactly one resolver
 
 
 People comparing it to REST, while that's confusing since nobody knows exactly what REST is, and almost none of the things 'unique' of GraphQL are impossible with REST. It's also a different kind of thing, comparing it to Avro might make more sense.
@@ -98,7 +119,6 @@ A complete replacement for basic CRUD Ops.
 
 In regards to 2. - a coworker said "graphql is great for frontend, not backend, particularly databases" but I'm a code newbie, so I don't really have enough experience / context to understand what he meant 🤷‍♀️
 
-. It's an efficient way to query graph database.
 2. Isse graph banta h?
 
 I think when someone start in Graphql, use a Schema First approach but when your API grown it's time to move to Code First approach.
@@ -135,9 +155,6 @@ On the other end of the spectrum:
 - That it’s really easy to layer on top of existing services (I have not found this to be true)
 
 
-- It's a complete backend technology, or
-- It's a database technology
-
 These both seem common to me. I've heard multiple people, particularly data scientists, starting out with the assumption that GraphQL is a database
 
 
@@ -149,39 +166,19 @@ These both seem common to me. I've heard multiple people, particularly data scie
 
 2. I don't want to use Facebook for my project. This one had a surprise when I told him about react.
 
-
-GraphQL is very confusing name coz when use word Graph it means Graph like a plotting graph and QL is already a known fact that it is something to do with SQL but graph word doesn’t sit with it. That is why I had/have trouble learning it coz Graph is again a Graph 😂
-
-
-Is graphql more performant than REST. I mean I know the data coming over the network will be less  in most of the cases for graphql. But apart from this, is there any other performance gains ?
-
-
-1. It’s as simple as REST for backend development. This is not true, it can be much trickier for the backend team. Ultimately worth it but there’s more upfront investment.
 2. It replaces ORMs. Lately we see a lot of DB and GraphQL integration but GraphQL itself is not that.
 
 
 I thought for a long time that GraphQL is only needed if one endpoint is used in multiple places, otherwise pointless.
 
 
- How resolvers are mapped and executed in front of GraphQL types 
 2. It will map automatically to your models and make some magic on top
 Generally speaking, high level frameworks like Apollo or Prisma, abstract a large amount of logic that requires explanation for newbies
 
 
-Probably the biggest confusion I’ve seen is between GraphQL and graph databases.
-
-
-GraphQL can't cache queries and only used for react
-
-
-Before starting I thought I would have to rewrite db,  but later I found it is just a wrapper with queries and mutation. Graphql makes life easy
-
 But I had issues with file uploads 
 And making Apis for get request such as unsubscribe link in email or verify user
 
-.  Picking up legacy code in a company saying they use graphql - then realizing they implemented an overbaked REST endpoint!
-
-
-A misconception we had was that GraphQL requires a schema compulsorily. We just loved the way a GraphQL query is written and then realized that you can decouple it from execution. 
 
 Then we went on to write a Schemaless graphql layer😀
+
