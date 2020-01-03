@@ -32,7 +32,7 @@ You will need to define exactly what each of them needs to do. You will be writi
 Redux is a state management library. GraphQL is not a state management library. GraphQL helps to get less data, which in turn leads to less data to manage on the client-side, but it is not a state management solution. You will still need to manage state - albeit lightweight. Client libraries like Apollo have cache built-in which can be used to manage state. GraphQL is not a replacement for Redux - it helps to reduce the need for it.  
 
 ## Myth: GraphQL is a database language. 
-GraphQL is a programming language - specifically a query language. GraphQL's spec defines how GraphQL runtimes should implement the language and how data should be communicated between client and server.
+GraphQL is a programming language - specifically a query language. GraphQL's spec defines how GraphQL runtimes should implement the language and how data should be communicated between client and server. GraphQL is used to ask for data and can be used in multiple places in any layer from front end to back-end. There are databases such as DGraph that use GraphQL to query database. 
 
 ## Myth: You can't have REST endpoints in your implementation with GraphQL. 
 You can plug in multiple REST endpoints or even multiple GraphQL endpoints in your application. Although it is not a best practice to have multiple REST endpoints, it is technically possible.
@@ -44,4 +44,4 @@ GraphQL can be plugged into an existing project. You can start with one componen
 Although front-end folks like myself are really passionate about GraphQL, GraphQL is platform agnostic. In my opinion, the beauty of GraphQL's benefits starts from the inside out - backend to frontend.
 
 ## Myth: GraphQL will write database queries itself, I just need to specify schemas and the relation between them
-You will need to write the database queries depending on which GraphQL library you are using. Everything including resolvers, queries, mutations needs to be defined.
+You may need to write the database queries depending on which GraphQL library you are using. However, some libraries like Neo4j and Prisma write database queries too and abstract the logic away from the developer. Everything including resolvers, queries, mutations needs to be defined.
