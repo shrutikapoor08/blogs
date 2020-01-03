@@ -34,7 +34,7 @@ You will need to define exactly what each of them needs to do. You will be writi
 
 
 ## Myth GraphQL replaces Redux / state management library
-Redux is a state management library. GraphQL is not a state management library. GraphQL helps to get less data, which in turn leads to less data to manage on the client side, but it is not a state management solution. You will still need to manage state - beit lightweight. Client libraries like Apollo have cache built-in which can be used to manage state. GraphQL is not a replacement for Redux - it helps to reduce the need for it.  
+Redux is a state management library. GraphQL is not a state management library. GraphQL helps to get less data, which in turn leads to less data to manage on the client side, but it is not a state management solution. You will still need to manage state - albeit lightweight. Client libraries like Apollo have cache built-in which can be used to manage state. GraphQL is not a replacement for Redux - it helps to reduce the need for it.  
 
 
 ## Myth GraphQL is a database language. 
@@ -42,15 +42,14 @@ GraphQL is a programming language - specifically a query language. GraphQL's spe
 
 
 ## Myth You can't have REST endpoints in your implementation with GraphQL. 
-
-You can plugin multiple REST endpoints or even multiple GraphQL endpoints in your application. Although it is not a best practice, it is technically possible. 
+You can plugin multiple REST endpoints or even multiple GraphQL endpoints in your application. Although it is not a best practice to have multiple REST endpoints, it is technically possible. 
 
 ## Myth GraphQL is meant for green field project and it is difficult to introduce in an existing project. 
 GraphQL can be plugged in an existing project. You can start with one component of a business logic, plug in a GraphQL endpoint, and start fetching data through GraphQL. You don't need to scrap an entire project to start using GraphQL. If switching to GraphQL endpoint is still a daunting task, you can start by masking a REST endpoint into a GraphQL endpoint using resolvers. 
 
 ## Myth GraphQL is only for frontend folks
-Although frontend folks like myself are really passionate about GraphQL, GraphQL is platform agnostic. In my opinion, the beauty of GraphQL's beneits starts from the inside out - backend to frontend. 
+Although frontend folks like myself are really passionate about GraphQL, GraphQL is platform agnostic. In my opinion, the beauty of GraphQL's benefits starts from the inside out - backend to frontend. 
 
 
-## Myth GraphQL will write database queries itself, i just need to specify schemas and the relation between them
-You will need to write the database queries. Everything including resolvers, queries, mutations needs to be defined. 
+## Myth GraphQL will write database queries itself, I just need to specify schemas and the relation between them
+You will need to write the database queries depending on which GraphQL library you are using. Everything including resolvers, queries, mutations needs to be defined. 
