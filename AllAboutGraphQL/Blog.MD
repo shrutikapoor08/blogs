@@ -20,7 +20,7 @@ GraphQL can be used to query a graph database, but it is not its only use case. 
 
 There is no limitation in the GraphQL spec that enforces that the data source should be a graph.
 
-## Myth: GraphQL is a database technology. 
+## Myth: GraphQL only works with databases or data sources that are graph based. 
 It's a misconception that you need to rewrite your database to adopt GraphQL. GraphQL can be a wrapper around any data source, including databases. GraphQL is a `query language for your API` - which means it is a syntax of how to ask for data. 
 
 ## Myth: Data fetching with resolvers, queries and mutations work magically. 
@@ -39,12 +39,19 @@ You can plug in multiple REST endpoints or even multiple GraphQL endpoints in yo
 GraphQL can be plugged into an existing project. You can start with one component of business logic, plug in a GraphQL endpoint, and start fetching data through GraphQL. You don't need to scrap an entire project to start using GraphQL. If switching to GraphQL endpoint is still a daunting task, you can start by masking a REST endpoint into a GraphQL endpoint using resolvers. 
 
 ## Myth: GraphQL is only for front-end developers
-Although front-end folks like myself are really passionate about GraphQL, GraphQL is platform agnostic. In my opinion, the beauty of GraphQL's benefits starts from the inside out - backend to frontend.
+GraphQL is platform agnostic. In my opinion, the beauty of GraphQL's benefits starts from the inside out - backend to frontend. As a backend developer, you are able to expand the API by adding fields without having to publish a new version of the API. You don't need to write different endpoints for different needs since clients can fetch whatever data they need. With GraphQL, you have visibility of what fields clients are using, giving powerful instrumentation. 
 
 ## Myth: GraphQL will write database queries itself, I just need to specify schemas and the relation between them
 You may need to write the database queries depending on which GraphQL library you are using. However, some libraries like Neo4j and Prisma write database queries too and abstract the logic away from the developer. Everything including resolvers, queries, mutations needs to be defined.
 
-# Other Myths 
 ## Myth: GraphQL is used to draw graphs. 
 Often people new to GraphQL think that it is a graph plotting software such as D3. GraphQL doesn't plot graphs. 
+
+## Myth That it requires complicated clients and is near impossible to do with a simple HTTP fetch
+
+## Myth: It replaces ORMs. 
+Lately we see a lot of DB and GraphQL integration but GraphQL itself is not that.
+
+
+I think GraphQL is awesome! There are a mulitude of libraries that help a user get started with GraphQL. If you are interested in learning about GraphQL, [start with the documentation](https://graphql.org/learn/) or [check out this Udemy course]( https://www.udemy.com/course/graphql-with-react-course/) that I found helpful when I was new to GraphQL
 
