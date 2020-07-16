@@ -82,7 +82,7 @@ Now open your browser's console to see the result.
 Since the header is currently set to allow access only from `https://yoursite.com`, the browser will block access to the resource and you will see an error in your console.
 
 
-![CORS error]('/img/CORS-access-denied.png')
+![CORS error](./img/CORS-access-denied.png)
 
 Now, to fix this, change the headers to - 
 
