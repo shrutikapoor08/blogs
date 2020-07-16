@@ -24,7 +24,7 @@ Here is an example from [MDN](https://mdn.mozillademos.org/files/14295/CORS_prin
  With the help of Cross Origin Resource Sharing (CORS), browsers allow origins to share resources amongst each other. There are a [few headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS#The_HTTP_response_headers) that allow sharing of resources across origins, but the main one is  `Access-Control-Allow-Origin`. This tells the browser what origins are allowed to receive requests from this server. 
 
 
-### Who needs to set `Access-Control-Allow-Origin`?
+## Who needs to set `Access-Control-Allow-Origin`?
 
 To understand who needs to set this header, consider this - You are browsing a website that is used to view songs. The website attempts to make a connection to your bank in the background maliciously. Who has the ultimate control to prevent this malicious website from stealing your data from the bank? The bank! So, the bank will need to protect its resources by setting the `Access-Control-Allow-Origin` header as part of the response. Hence, the origin responsible for serving resources will need to set this header.
 
@@ -37,7 +37,7 @@ Here's an example of values you can set:
 2. `Access-Control-Allow-Origin : http://mysite.com` : Allow requests only from mysite.com
 
 
-### See in action! 
+## See in action! 
 
 Let's look at an example! You can check out this code [on my GitHub repo](https://github.com/shrutikapoor08/blogs/tree/master/code-examples/CORS). 
 
