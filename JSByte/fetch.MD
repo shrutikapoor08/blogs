@@ -1,4 +1,4 @@
-# How to use fetch API to make network calls in JavaScript? 
+# How to use fetch API to make AJAX calls in JavaScript? 
 
 Fetch is an interface for calling a network request in JavaScript. It is implemented widely by modern browsers and provides a fairly straightforward way of calling an API. 
 
