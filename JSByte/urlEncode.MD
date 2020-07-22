@@ -1,9 +1,10 @@
-#How to use encodeURIcomponent()
+Outline - 
+# Why do we need to use encodeURIcomponent()
 
+# The syntax
 
-The syntax
+# Are all characters escaped?
+No, the characters `A-Z a-z 0-9 - _ . ! ~ * ' ( )` are not escaped. 
 
-Why? 
-
-When?
+# Difference between encodeURIComponent and encodeURI()
 
