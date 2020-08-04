@@ -1,56 +1,46 @@
 It seems that `encodeURI` and `encodeURIComponent` do the same thing, at least from the name. What always confuses me is when to use either of them? 
+In this article, I will demystify the difference between `encodeURI` and `encodeURIComponent`. 
 
-### When do we need to use them?
-The main reason to encode a URI is to **escape** the characters that form the URL. Special characters such as `&`, `space`, `!` when entered in a url need to be escaped, otherwise they may cause unpredictable situations. 
-
-Use cases:
-1. A form that accepts a user input of `url`: You can't assume that the user will always give clean input. The user could have written malicious code
-    
-    
-    
-    
-    I have found that I need to clean the input accepted from a user. This input could my use case is one of the following - 
-1. User has submitted values in a form that may be in a string format.
-2. Need to accept urls in order to make GET / POST requests.
-
-This one always confuses me. Am I supposed to use `encodeURI`? What is the difference between `encodeURIComponent`? When would I use either of those? Why do I even need one over the other since they seem to be doing the same thing - from the name at least.
-
-In this article, I will aim to demystify the difference between `encodeURI` and `encodeURIComponent`. 
 
 ### What is a URI and how is it different from URL? 
-URI: Uniform Resource Identifier.
-URL: Uniform Resource Locator.
+These abbreviations stand for:
+**URI**: Uniform Resource Identifier
+**URL**: Uniform Resource Locator
 
 Anything that uniquely identifies a resource is its URI, such as id, name, ISBN number. A URL specifies a resource and how it can be accessed(protocol).  All URLs are URIs, but not all URIs are URLs.
 
 
-#
+### Why do we need to encode?
+URLs can only have certain characters from the standard 128 character ASCII set. Reserved characters that do not belong to this set must be encoded. Hence, we need to encode these characters when passing into a URL. Special characters such as `&`, `space`, `!` when entered in a url need to be escaped, otherwise they may cause unpredictable situations. 
 
-Outline - 
-# What is?
-encodeURI and encodeURIComponent are used to encode Uniform Resource Identifier(URI) by replacing certain characters by one, two, three or four escape sequences representing the UTF-8 encoding of the character.
-
-
-# Why do we need to use encodeURIcomponent()
-
-encodeURIComponent should be used to encode a **URI** **Component** - a string that is supposed to be part of a URL
-
-encodeURI should be used to encode a **URI**.
-
-
-
+Use cases:
+1. User has submitted values in a form that may be in a string format and need to be passed in, such as url fields. 
+2. Need to accept query string parameters in order to make GET requests.
 
 
 ### What is the difference between encodeURI and encodeURIComponent?
 
-```
-If you're encoding a string to put in a URL component (a query string parameter), you should use encodeURIComponent, and if you're encoding an existing URL, use encodeURI. It's simple! 😎
+`encodeURI` and `encodeURIComponent` are used to encode Uniform Resource Identifier(URI) by replacing certain characters by one, two, three or four escape sequences representing the UTF-8 encoding of the character.
 
-```
+`encodeURIComponent` should be used to encode a **URI** **Component** - a string that is supposed to be part of a URL
 
-The `encodeURIComponent` is used to encode the "compoennts" of a URI. The URI represents `https://www.lookup.com`. If you are planning to encode parts of this component, you should use `encodeURIComponent`. If you are planning to encode a whole URI, use `encodeURI`. 
+`encodeURI` should be used to encode a **URI** or an existing URL. 
 
-Here's some examples: 
+[Here's a handy table of the difference in encoding of characters](https://stackoverflow.com/a/23842171)
+
+
+
+### Which characters are encoded?
+
+`encodeURI()` will not encode: `~!@#$&*()=:/,;?+'`
+
+`encodeURIComponent()` will not encode: `~!*()'`
+
+The characters `A-Z a-z 0-9 - _ . ! ~ * ' ( )` are not escaped. 
+
+
+### Examples
+
 ```JS
 const url = 'https://www.twitter.com'
 
@@ -60,42 +50,29 @@ console.log(encodeURIComponent(url))    //https%3A%2F%2Fwww.twitter.com
 
 const paramComponent = '?q=search'
 console.log(encodeURIComponent(paramComponent)) //"%3Fq%3Dsearch"
-
-let newUrl = url + encodeURIComponent(paramComponent) //https://www.twitter.com%3Fq%3Dsearch
-
-```
-
-### Why do we need to use encodeURIcomponent()
-EncodeUrIcomponent is used to replace each instance of a character by one, two, three or four characters. 
-encodeURIComponent should be used on any data that is accepted from a user. For eg: the data received from POST 
-
-### Are all characters escaped?
-No, the characters `A-Z a-z 0-9 - _ . ! ~ * ' ( )` are not escaped. 
-
-### Difference between encodeURIComponent and encodeURI
-EncodeURIComponent should be used when a URI component needs to be encoded. A component is a part of URI such as the hostname.
-
-Which one should you use to encode URLs?
-encodeURI is used for strings that are already a url and some parts of it need to be encoded. 
-encodeURICOmponent is used for strings that are supposed to be part of a url, and need to be added to a url after getting encoded. It is used to "clean up" inputs accepted from a user. If it was a form, I would use encodeURIComponent. If I accepted a URL from a user, I would use encodeURI. ENCODEURICOMPOENT is used to encode query string parameters. 
-
-```JS
-encodeURI() will not encode: ~!@#$&*()=:/,;?+'
-
-encodeURIComponent() will not encode: ~!*()'
-```
-
-
-
-```
-let urlString = 'http://mysite.com'
-
-console.log(encodeURI(urlString))
-console.log(encodeURIComponent(urlString)) //http%3A%2F%2Fmysite.com
+console.log(url + encodeURIComponent(paramComponent)) //https://www.twitter.com%3Fq%3Dsearch
 
 ```
 
-# Tools to url encode 
-https://www.urlencoder.org/
+### When to encode 
+1. When accepting an input thay may have spaces.
+    ```JS 
+    encodeURI("http://www.mysite.com/a file with spaces.html") //http://www.mysite.com/a%20file%20with%20spaces.html
+    ```
+2. When building a url from query string parameters.
+   ```JS
+    let param = encodeURIComponent('mango')
+    let url = "http://mysite.com/?search=" + param + "&length=99"; //http://mysite.com/?search=mango&length=99
 
-## conclusion
+   ```
+   
+3. When accepting query parameters that may have reserved characters.
+ ```JS
+    let params = encodeURIComponent('mango & pineapple')
+    let url = "http://mysite.com/?search=" + params; //http://mysite.com/?search=mango%20%26%20pineapple
+
+
+   ```
+
+### Summary
+If you have a complete URL, use `encodeURI`, if you have a part of a url, use `encodeURIComponent`. 
