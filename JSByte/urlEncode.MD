@@ -1,3 +1,5 @@
+# 
+
 It seems that `encodeURI` and `encodeURIComponent` do the same thing, at least from the name. What always confuses me is when to use either of them? 
 In this article, I will demystify the difference between `encodeURI` and `encodeURIComponent`. 
 
@@ -76,3 +78,6 @@ console.log(url + encodeURIComponent(paramComponent)) //https://www.twitter.com%
 
 ### Summary
 If you have a complete URL, use `encodeURI`, if you have a part of a url, use `encodeURIComponent`. 
+
+
+Interested in more tutorials and JSBytes from me? [Sign up for my newsletter.](https://tinyletter.com/shrutikapoor) or [follow me on Twitter](https://twitter.com/shrutikapoor08)
