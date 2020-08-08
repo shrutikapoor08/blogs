@@ -1,0 +1,5 @@
+- optional chaining
+- trim whitespace
+- react usestate
+- js splice
+- js array methods
