@@ -12,9 +12,12 @@ S (p) lice => Slice + (p) = Slice + in (p) lace
 --- 
 
 
-Let's dive deeper into what these two do. 
+Let's dive deeper into these
 
 ## .slice()
+
+```arr.slice([start[, end]])```
+
 
 ## .splice()
 
