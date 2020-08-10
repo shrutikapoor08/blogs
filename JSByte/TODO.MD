@@ -3,3 +3,5 @@
 - react usestate
 - js splice
 - js array methods
+-  "JavaScript Form Validation – How to Check User Input on HTML Forms with JS Example Code"
+- "JavaScript Events Tutorial – How to do Event Handling in JS"

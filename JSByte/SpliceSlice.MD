@@ -13,13 +13,32 @@ S (p) lice => Slice + (p) = Slice + in (p) lace
 
 
 Let's dive deeper into these
-
 ## .slice()
+It is used to slice an array from the `start` point to `end` point, with `end` not included. 
 
 ```arr.slice([start[, end]])```
 
+Rules
+1. A new array is returned and the original array is unmodified. 
+2. If `end` is omitted, end becomes the end (last element) of array. 
+3. If `start` is -ve, the element are counted from the back of array.
+
+
+```JS
+const myArray = [1, 2, 3, 4, 5]
+
+let wholeSlice = myArray.slice(0) // [1, 2, 3, 4, 5]
+let aSlice = myArray.slice(0,1) //[0]
+console.log(myArray)
+
+
+```
 
 ## .splice()
+
+
+## What are some use cases of using them?
+- 
 
 ## Code examples
 
