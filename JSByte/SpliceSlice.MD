@@ -43,7 +43,7 @@ arr.splice(start, [deleteCount, itemToInsert1, itemToInsert2, ...])
 
 Rules
 1. Operation is in place. 
-2. An array with the operaton performed is returned back. 
+2. An array is returned with the deleted items. 
 3. If `start` is -ve, the elements are counted from the end.
 4. If `deleteCount`is omitted,the elements until the end of array are removed.
 5. If items to insert such as `itemToInsert1` are omitted, elements are only removed.
