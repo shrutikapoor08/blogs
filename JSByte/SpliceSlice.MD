@@ -65,6 +65,26 @@ Here, `cake` is modified and reduces in size.
 
 
 ## Code Examples
+```JS
+const myArray  = [1,2,3,4,5,6,7] 
+
+console.log(myArray.slice(0))       // [ 1, 2, 3, 4, 5, 6, 7 ]
+console.log(myArray.slice(0, 1))    // [ 1 ]
+console.log(myArray.slice(1))       // [ 2, 3, 4, 5, 6, 7 ]
+console.log(myArray.slice(5))       // [ 6, 7 ]
+console.log(myArray.slice(-1))      // [ 7 ]
+console.log(myArray)                // [ 1, 2, 3, 4, 5, 6, 7 ]
+
+
+const secondArray = [10, 20, 30, 40, 50]
+console.log(secondArray.splice(0, 1))   // [ 10 ] : deletes 1 element starting at index 0
+console.log(secondArray.splice(-2, 1))  // [ 40 ] : deletes 1 element starting at index end-2 
+console.log(secondArray)                // [ 20, 30, 50 ]
+console.log(secondArray.splice(0))      // [ 20, 30, 50 ] : deletes all elements starting at index 0
+console.log(secondArray)                // []
+console.log(secondArray.splice(2, 0, 60, 70)) // [] : deletes 0 elements starting at index 2 (doesn't exist so defaults to 0) and then inserts 60, 70
+console.log(secondArray)                // [60, 70]
+```
 
 
 ## TL;DR
