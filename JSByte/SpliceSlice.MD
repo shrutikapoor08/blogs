@@ -1,17 +1,14 @@
 # JavaScript: Difference between splice and slice - explained with a cake example.
 
-I could rename this to "how to not get confused between splice and slice" because honestly, I can never remember the difference between the two. 
-
-So here is an attempt to make myself remember the difference between these two -
+This could be translated to "how to not get confused between splice and slice" because, I can never remember the difference between the two. So I am hoping this trick will help me and you in the future -
 
 
 ```
-S (p) lice => Slice + (p) = Slice + in (p) lace
+S (p) lice = Slice + (p) => Slice + in (p) lace
 ```
 
 --- 
 
-Let's dive deeper into these
 ## Array.prototype.slice()
 It is used to slice an array from the `start` point to `end` point, excluding `end`. Like the name suggests, it is used to slice elements out of an array, but unlike slicing a cake, slicing an array does not cut the actual array, but keeps it unmodified (infinite cake!). 
 
@@ -76,7 +73,9 @@ console.log(myArray.slice(-1))      // [ 7 ]
 console.log(myArray)                // [ 1, 2, 3, 4, 5, 6, 7 ]
 
 
+
 const secondArray = [10, 20, 30, 40, 50]
+
 console.log(secondArray.splice(0, 1))   // [ 10 ] : deletes 1 element starting at index 0
 console.log(secondArray.splice(-2, 1))  // [ 40 ] : deletes 1 element starting at index end-2 
 console.log(secondArray)                // [ 20, 30, 50 ]
