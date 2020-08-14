@@ -26,7 +26,7 @@ Rules
 ```JS
 const infiniteCake = ['🍰','🍰','🍰','🍰','🍰','🍰']
 
-let myPieceOfCake = infiniteCake.slice(0) // ['🍰']
+let myPieceOfCake = infiniteCake.slice(0, 1) // ['🍰']
 let yourDoublePieceOfCake = infiniteCake.slice(0,2) // (2) ["🍰", "🍰"]
 console.log(infiniteCake) //['🍰','🍰','🍰','🍰','🍰','🍰']
 
