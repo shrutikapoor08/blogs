@@ -1,14 +1,16 @@
-Optional chaining Javascript 
+# Optional chaining Javascript 
 
-# What is it? 
-Optional chaining in javascript is  anew feature intorduced in 22020. It fixes the problem of having to do multiple && in javascript to find out if a variable and / or its property exist or not. 
+## What is it? 
 
-Here is whereit comes in handy - 
+Optional chaining `?.` in javascript is a new feature introduced in ES2020. It fixes the problem of having to do multiple null checks when accessing of long chain of object properties in javascript.
+
+
+## Use case
 
 1. Finidng properties of an element
-let's consider this object. Imagine you are expecting an aPI to return an object of this sort. 
+Let's consider this object. Imagine you are expecting an API to return an object of this sort. 
 ```JS
-obj = |{
+obj = {
     prop1 : {
         prop2: {
             someProp: true
@@ -17,7 +19,7 @@ obj = |{
 }
 ```
 
-But, you may not know if each of these fields are available, to avoid null pointer exception, ir hav d ata yet. So you will ask for this data in React like this - 
+But, you may not know if each of these fields are available ahead of time, to avoid null pointer exception, if have data yet. You may have seen code in React like this - 
 
 ```
 obj && obj.prop1 && obj.prop1.prop2 && obj.prop1.prop2.someProp && 
@@ -38,7 +40,18 @@ Optional chaining is exactly that! Now instead of using an external library, thi
 
 - how does it work
 
+`?.` can be used to chain properties that may be expected to be null. 
+```
+const propNeeded = obj?.prop1?.prop2?.someProp;
 
+```
+If either of those chained properties is null, javascript will return `undefined`. 
 
-- how to enable?
+What if we want to return something meaninful, such as with `_.get`?
 
+```
+const grandChild = _.get(familyTree, 'shruti.children.theirChildren', 'she aint got no kids' );
+
+const grandChildWithNullOperator = familyTree?.shruti?.children?.theirChildren
+
+```
