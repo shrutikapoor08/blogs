@@ -37,17 +37,16 @@ In order to get past this issue, often times in the past we have used `underscor
 which gives undefined if either of those properties are not found. 
 Optional chaining is exactly that! Now instead of using an external library, this functionality is in-built. 
 
+## How does it work
 
-- how does it work
-
-`?.` can be used to chain properties that may be expected to be null. 
+`?.` can be used to chain properties that may be expected to be `null` or `undefined`. 
 ```
 const propNeeded = obj?.prop1?.prop2?.someProp;
 
 ```
-If either of those chained properties is null, javascript will return `undefined`. 
+If either of those chained properties is `null` or `undefined`, javascript will return `undefined`. 
 
-What if we want to return something meaninful, such as with `_.get`?
+What if we want to return something meaningful, such as with `_.get`?
 
 ```
 const grandChild = _.get(familyTree, 'shruti.children.theirChildren', 'she aint got no kids' );
@@ -55,3 +54,23 @@ const grandChild = _.get(familyTree, 'shruti.children.theirChildren', 'she aint 
 const grandChildWithNullOperator = familyTree?.shruti?.children?.theirChildren
 
 ```
+
+- Works for objects that may be null
+```
+const user;
+console.log(user?.id?) //undefined
+
+```
+
+## Advanced use cases.
+- Can this be used for functions that may return null / undefined? 
+- 
+
+
+
+## How to get 
+
+- in your console
+ This is a recent addition and old browsers may need polyfills. 
+
+ - in your node app
