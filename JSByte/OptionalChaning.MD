@@ -67,7 +67,7 @@ render = () => {
 
 ```
 
-In order to better prepare for this issue, often times in the past we have used `underscore.js`, specifically the `_.get` method.
+In order to better prepare for this issue, often times in the past we have used `Lodash.js`, specifically the `_.get` method.
 ```javascript
 _.get(obj, prop1.prop2.someProp);
 
