@@ -27,17 +27,62 @@ buttonContainer.addEventListener('click', event => {
 ```
 
 ## What are the different types of events?
-An event can be triggered by any behavior of a user interacting with the page. Here are the common events - 
+An event can be triggered by any behavior of a user interacting with the page. These events could be a user scrolling the page, clicking an item, loading a page. Here are the common events - 
 
 onclick dblclick mousedown mouseup mousemove keydown keyup touchmove touchstart touchend onload onfocus onblur onerror onscroll 
 
-## Different phases of events
+## Different phases of events 
+When an event moved down the web page, it is called event propogation. the event is said to propogate through the DOM tree. Events happen in two phases - the bubbling phase and the capturing phase. In bubbling phase, the event is "bubbled" up the DOM tree - it is first captured and handled by the innermost handler - the handler  that 
+is closest to the eelement on which the event occured. It then bubbles up - or propogates up to the higher levels of DOM tree, further up to its parents and then finally to its root. 
 
-## Propagating events
+In capturing phase, also called trickling phase, the event "trickles down" to the element that caused the event. It starts from the root level element and handler, and then propagates down to the element. 
+```trickle down, bubble up```
+
+You can register event handlers for either phase - `addEventListener(type, listener, useCapture)`. If `useCapture` is set to `false`, the event handler is in bubbling phase, or else capture phase. 
+
+
+Here's an infographic from quirksmode https://www.quirksmode.org/js/events_order.html that explains this very well - 
+```
+               / \
+---------------| |-----------------
+| element1     | |                |
+|   -----------| |-----------     |
+|   |element2  | |          |     |
+|   -------------------------     |
+|        Event BUBBLING           |
+-----------------------------------
+
+               | |
+---------------| |-----------------
+| element1     | |                |
+|   -----------| |-----------     |
+|   |element2  \ /          |     |
+|   -------------------------     |
+|        Event CAPTURING          |
+-----------------------------------
+
+```
+
+One thing to note is that, whether or not you register an event handler in either of these phases, both phases ALWAYS happen. 
 
 ## How to register for an event?
+You can register an event by using `addEventListener`. For example, to register for a click event - 
+
+```javascript
+target.addEventListener('click', onClickHandler);
+```
+ 
+ To register for an event in bubbling phase - 
+ ```javascript
+ target.addEventListener('click', onClickHandler, false);
+ ```
+
+## Use cases for bubbling / capturing phases. 
+
  
 ## Code examples and live action
+
+## Why is bubbling / capturing important?
 
 ## TL;DR
 
