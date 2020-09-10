@@ -88,6 +88,8 @@ target.addEventListener('click', onClickHandler);
  
 ## Code examples and live action
 
+https://jsfiddle.net/mpvytzwj/17/
+
 ## Why is bubbling / capturing important?
 
 ## Futher reading 
