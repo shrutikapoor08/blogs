@@ -10,7 +10,6 @@ In a browser, events are handled similarly. The browser detects a change, alerts
 
 An example of `click` event handler - 
  
- TODO: give example
 ```
 <div class="buttons">
   <button>Press 1</button>
@@ -69,41 +68,130 @@ Here's an infographic from quirksmode https://www.quirksmode.org/js/events_order
 ```
 
 One thing to note is that, whether you register an event handler in either of these phases, both phases ALWAYS happen. By default all events bubble.
-The order of the events phases depends on the browser.                                                                                                            
+The order of the events phases depends on the browser. 
 
-## How to register for an event?
-You can register an event by using `addEventListener`. For example, to register for a click event - 
-
-```javascript
-target.addEventListener('click', onClickHandler);
-```
  
  To register for an event in bubbling phase - 
+```
+ target.addEventListener(type, listener [, useCapture]);
+```
+
  ```javascript
  target.addEventListener('click', onClickHandler, false);
  ```
 
-## When to use bubbling vs capturing phases. 
 
+## How to listen for an event?
+There are two ways to listen for an event - 
+1.  `addEventListener` 
+2.  inline events, such as `onclick`
+
+Here's how these can be used - 
+```
+
+document.getElementByTag('a').addEventListener('click', onClickHandler);
+
+<a href="#" onclick="onClickHandler">Click me</a>
+
+```
+
+```The significant drawback with inline events is that unlike event listeners described above, you may only have one inline event assigned. Inline events are stored as an attribute/property of the element[doc], meaning that it can be overwritten.var element = document.getElementById('testing');
+element.onclick = function () { alert('did stuff #1'); };
+element.onclick = function () { alert('did stuff #2'); };
+
+TODO: show multiple event handlers attached
+
+var h = document.getElementById('a');
+h.onclick = doThing_1;
+h.onclick = doThing_2;
+
+h.addEventListener('click', doThing_3);
+h.addEventListener('click', doThing_4);
+
+element.addEventListener()
+Allows you to register unlimited events handlers and remove them with element.removeEventListener().
+Has useCapture parameter, which indicates whether you'd like to handle event in its capturing or bubbling phase. See: Unable to understand useCapture attribute in addEventListener.
+
+
+```
  
 ## Code examples and live action
 
-https://jsfiddle.net/mpvytzwj/17/
+You can try out these events in JSFiddle to play around with these events. 
 
-## Why is bubbling / capturing important?
+```html
+<div id="wrapper-div">
+  <div id="child-one">
+    <h1>
+      Child One
+    </h1>
+  </div>
+  <div id="child-two" onclick="childTwoHandler">
+    <h1>
+      Child Two
+    </h1>
+  </div>
+
+</div>
+
+```
+
+```javascript
+const wrapperDiv = document.getElementById("wrapper-div");
+const childOne = document.getElementById("child-one");
+const childTwo = document.getElementById("child-two");
+
+const childOneHandler = () => {
+console.log('Captured on child one')
+}
+
+const childTwoHandler = () => {
+console.log('Captured on child two')
+}
+
+const wrapperDivHandler = () => {
+console.log('Captured on wrapper div')
+}
+
+const childOneHandlerCatch = () => {
+console.log('Captured on child one in capture phase')
+}
+
+const childTwoHandlerCatch = () => {
+console.log('Captured on child two in capture phase')
+}
+
+const wrapperDivHandlerCatch = () => {
+console.log('Captured on wrapper div in capture phase')
+}
+
+
+childOne.addEventListener("click", childOneHandler); 
+childTwo.addEventListener("click", childTwoHandler); 
+wrapperDiv.addEventListener("click", wrapperDivHandler); 
+
+childOne.addEventListener("click", childOneHandlerCatch, true); 
+childTwo.addEventListener("click", childTwoHandlerCatch, true); 
+wrapperDiv.addEventListener("click", wrapperDivHandlerCatch, true); 
+```
+
 
 ## Futher reading 
 https://www.quirksmode.org/js/events_order.html
+https://jsfiddle.net/r2bc6axg/
+https://stackoverflow.com/questions/6348494/addeventlistener-vs-onclick
+https://www.w3.org/wiki/HTML/Attributes/_Global#Event-handler_Attributes
 
 ## TL;DR
+Event phases are - capture (DOM -> target), bubble (target-> DOM) and target. 
+Events can be listened by using `addEventListener` or inline methods such as `onclick`. 
+
+```
+    addEventListener can add multiple events, whereas with onclick this cannot be done.
+    onclick can be added as an HTML attribute, whereas an addEventListener can only be added within <script> elements.
+    addEventListener can take a third argument which can stop the event propagation.
+
+```
 
 
-## Closing
-
----
-
-Important concepts - 
-1. bubbling phase
-2. catch phases
-3. event propagation
-4. event handlers
+To keep up with more short tutorials like this, [Sign up for my newsletter.](https://tinyletter.com/shrutikapoor) or [follow me on Twitter](https://twitter.com/shrutikapoor08)
