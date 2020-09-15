@@ -26,24 +26,20 @@ buttonContainer.addEventListener('click', event => {
 ```
 
 ## What are the different types of events?
-An event can be triggered by any behavior of a user interacting with the page. These events could be a user scrolling the page, clicking an item, loading a page. Here are the common events - 
-
-onclick dblclick mousedown mouseup mousemove keydown keyup touchmove touchstart touchend onload onfocus onblur onerror onscroll 
+An event can be triggered by any behavior of a user interacting with the page. These events could be a user scrolling the page, clicking an item, loading a page. Here are some common events - `onclick` `dblclick` `mousedown` `mouseup` `mousemove` `keydown` `keyup` `touchmove` `touchstart` `touchend` `onload` `onfocus` `onblur` `onerror ` `onscroll` 
 
 ## Different phases of events - capture, target, bubble
 When an event moves through the DOM - whether bubbling up or trickling down, it is called event propagation. the event is said to propagate through the DOM tree. Events happen in two phases - the bubbling phase and the capturing phase. 
 
-In capturing phase, also called trickling phase, the event "trickles down" to the element that caused the event. It starts from the root level element and handler, and then propagates down to the element. 
-```trickle down, bubble up```
-The capture phase is completed when the event reaches the `target`. 
+In capturing phase, also called trickling phase, the event "trickles down" to the element that caused the event. It starts from the root level element and handler, and then propagates down to the element. The capture phase is completed when the event reaches the `target`. 
 
-In bubbling phase, the event is "bubbled" up the DOM tree - it is first captured and handled by the innermost handler - the handler  that 
-is closest to the eelement on which the event occured. It then bubbles up - or propogates up to the higher levels of DOM tree, further up to its parents and then finally to its root. 
+In bubbling phase, the event is "bubbled" up to the DOM tree - it is first captured and handled by the innermost handler - the handler that 
+is closest to the element on which the event occurred. It then bubbles up - or propagates up to the higher levels of DOM tree, further up to its parents and then finally to its root. 
 
-
-
-You can register event handlers for either phase - `addEventListener(type, listener, useCapture)`. If `useCapture` is set to `false`, the event handler is in bubbling phase, or else capture phase. 
-
+A trick which can help you remember this - 
+```
+trickle down, bubble up
+```
 
 Here's an infographic from quirksmode https://www.quirksmode.org/js/events_order.html that explains this very well - 
 ```
@@ -71,7 +67,16 @@ One thing to note is that, whether you register an event handler in either of th
 The order of the events phases depends on the browser. 
 
  
- To register for an event in bubbling phase - 
+## How to listen for an event?
+There are two ways to listen for an event - 
+1.  `addEventListener` 
+2.  inline events, such as `onclick`
+
+---
+Here's how these can be used - 
+
+The syntax is - 
+ 
 ```
  target.addEventListener(type, listener [, useCapture]);
 ```
@@ -80,18 +85,18 @@ The order of the events phases depends on the browser.
  target.addEventListener('click', onClickHandler, false);
  ```
 
-
-## How to listen for an event?
-There are two ways to listen for an event - 
-1.  `addEventListener` 
-2.  inline events, such as `onclick`
-
-Here's how these can be used - 
 ```
 
 document.getElementByTag('a').addEventListener('click', onClickHandler);
 
 <a href="#" onclick="onClickHandler">Click me</a>
+
+```
+ 
+You can register event handlers for either phase, bubbling or capturing, by using the function `addEventListener(type, listener, useCapture)`. If `useCapture` is set to `false`, the event handler is in bubbling phase, or else capture phase. 
+
+
+
 
 ```
 
