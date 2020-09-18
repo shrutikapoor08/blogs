@@ -36,12 +36,12 @@ In capturing phase, also called trickling phase, the event "trickles down" to th
 In bubbling phase, the event is "bubbled" up to the DOM tree - it is first captured and handled by the innermost handler - the handler that 
 is closest to the element on which the event occurred. It then bubbles up - or propagates up to the higher levels of DOM tree, further up to its parents and then finally to its root. 
 
-A trick which can help you remember this - 
+A trick to help you remember this - 
 ```
 trickle down, bubble up
 ```
 
-Here's an infographic from quirksmode https://www.quirksmode.org/js/events_order.html that explains this very well - 
+Here's an infographic from [quirksmode](https://www.quirksmode.org/js/events_order.html) that explains this very well - 
 ```
                / \
 ---------------| |-----------------
@@ -63,43 +63,58 @@ Here's an infographic from quirksmode https://www.quirksmode.org/js/events_order
 
 ```
 
-One thing to note is that, whether you register an event handler in either of these phases, both phases ALWAYS happen. By default all events bubble.
-The order of the events phases depends on the browser. 
+One thing to note is that, whether you register an event handler in either phase, both phases ALWAYS happen. All events bubble by default. You can register event handlers for either phase, bubbling or capturing, by using the function `addEventListener(type, listener, useCapture)`. If `useCapture` is set to `false`, the event handler is in bubbling phase, or else capture phase. The order of the phases of the event depends on the browser.
 
+
+To check which browser honors capture first, you can try the following code in JSfiddle - 
+```html
+<div id="child-one">
+    <h1>
+      Child One
+    </h1>
+  </div>
+
+```
+
+```javascript
+const childOne = document.getElementById("child-one");
+
+const childOneHandler = () => {
+console.log('Captured on child one')
+}
+
+const childOneHandlerCatch = () => {
+console.log('Captured on child one in capture phase')
+}
+
+childOne.addEventListener("click", childOneHandler); 
+childOne.addEventListener("click", childOneHandlerCatch, true); 
+```
+
+In Firefox, Safari and Chrome, the output is - 
+![Events in capture phase are fired first](./img/events_capture_order.png) 
  
-## How to listen for an event?
-There are two ways to listen for an event - 
+ 
+## How to listen to an event?
+There are two ways to listen to an event - 
 1.  `addEventListener` 
 2.  inline events, such as `onclick`
 
----
-Here's how these can be used - 
-
-The syntax is - 
- 
-```
- target.addEventListener(type, listener [, useCapture]);
-```
-
- ```javascript
- target.addEventListener('click', onClickHandler, false);
  ```
-
-```
-
+//addEventListener
 document.getElementByTag('a').addEventListener('click', onClickHandler);
 
+//inline using onclick
 <a href="#" onclick="onClickHandler">Click me</a>
-
-```
- 
-You can register event handlers for either phase, bubbling or capturing, by using the function `addEventListener(type, listener, useCapture)`. If `useCapture` is set to `false`, the event handler is in bubbling phase, or else capture phase. 
-
-
-
-
 ```
 
+## Which is better - inline event or `addEventListener`?
+
+1. `addEventListener` gives the ability to register unlimited event handlers.
+2. `removeEventListener` can also be used to remove event handlers
+3. The `useCapture` flag can be used indicate whether an event needs to be handled in capture phase or bundled phase.
+
+---
 ```The significant drawback with inline events is that unlike event listeners described above, you may only have one inline event assigned. Inline events are stored as an attribute/property of the element[doc], meaning that it can be overwritten.var element = document.getElementById('testing');
 element.onclick = function () { alert('did stuff #1'); };
 element.onclick = function () { alert('did stuff #2'); };
@@ -114,7 +129,6 @@ h.addEventListener('click', doThing_3);
 h.addEventListener('click', doThing_4);
 
 element.addEventListener()
-Allows you to register unlimited events handlers and remove them with element.removeEventListener().
 Has useCapture parameter, which indicates whether you'd like to handle event in its capturing or bubbling phase. See: Unable to understand useCapture attribute in addEventListener.
 
 
