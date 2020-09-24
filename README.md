@@ -9,3 +9,5 @@ A collection of all blog post articles I have written so far across various plat
 3. GraphQL 
 4. Front-end development
 
+
+If these blogs helped you, [consider supporting me to keep this going.](https://github.com/sponsors/shrutikapoor08)
