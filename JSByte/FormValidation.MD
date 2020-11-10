@@ -1,9 +1,10 @@
 # JavaScript Form Validation – How to Check User Input on HTML Forms with JS Example Code
 
-From a UI when data is collected, it is important to validate the format of the data before it is sent over to server. This is called form validation on client side and is typically done with JavaScript.
+Forms are ubiquitous in internet world. Some apps such as Gmail use forms to collect data to sign up users and give an email address, whereas some apps such as PayPal use forms to do online shopping and process payment from a buyer to a merchant. Some web forms are used to apply for a new car loan whereas some forms are used to order pizza for dinner. It is therefore important that when forms are developed, the data that is collected is cleansed and removed of any malicious data. This is called form validation.
 
+Form validation works both on client side and server side. You may have noticed that in some forms, as soon as you enter an invalid email address, the form gives an error "Please enter a valid email". This "immediate" type of validation is usually done via client-side code using JavaScript. In other cases, you may have noticed that when you enter a credit card, a form will show a loader and sometimes show an error "This credit card is invalid". In this kind of validation, the form made a call to its server side code, and returned a validation error. This validation case where a call to the server was made is called server side validation. 
 
-# TO-DO insert form validation snapshot here
+###TODO insert form validation snapshot here <gif> 
 
 
 You will need form validation when data is entered in a form. A user will enter data, which could be email, phone number. To be sure that the data entered by the user is what it is expected to, you will need to validate the data. 
@@ -13,6 +14,9 @@ not only is this good for your API, but is also a way of ensuring security.
 - ensuring data is what it expected to be
 
 ## Types of form validation 
+- Server side
+
+- Client side
 - data type 
     - email 
       - phone number
