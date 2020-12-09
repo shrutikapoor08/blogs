@@ -29,16 +29,25 @@ not only is this good for your API, but is also a way of ensuring security.
 
 
 ## How to validate form data
-Client side:
- 1. built in HTML5 functionality
- - `required` (code)
- - `minlength`, `maxlength`
- - `type`
+On client side, validation can be done in two ways - 
+ 1. Using built in HTML5 functionality
+ - Making fields required using `required`
+ - Constraining the length of data: 
+   - `minlength`, `maxlength`: for text data
+   - `min` and `max` for max value of num type
+ - Restricting the type of data using `type` :
+   - `<input type="email" name="multiple>`
+ - Specifying data pattern using `pattern`: 
+   - specifies a regex pattern that entered form data needs to match
  
- 1. with JavaScript 
+When data entered matches the above client validation, it gets assigned a psuedo-class `:valid` and `:invalid` if it doesn't.
+
+
+ 1. JavaScript 
 - format checks (code)
 - required checks
-
+- Constraint validation API
+<!-- TODO: Write content from  "Validating forms using js section here https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation-->
 
 Server side:
 
@@ -48,3 +57,6 @@ Remember: client side validation is not the only security measure you should do.
 
 https://medium.com/@andrew.burton/form-validation-best-practices-8e3bec7d0549
 https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation
+https://developer.mozilla.org/en-US/docs/Learn/Forms/HTML5_input_types
+https://developer.mozilla.org/en-US/docs/Learn/Server-side/First_steps/Website_security
+https://www.smashingmagazine.com/2009/07/web-form-validation-best-practices-and-tutorials/
