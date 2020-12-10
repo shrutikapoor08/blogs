@@ -30,7 +30,7 @@ not only is this good for your API, but is also a way of ensuring security.
 
 ## How to validate form data
 On client side, validation can be done in two ways - 
- 1. Using built in HTML5 functionality
+ ### Using built in HTML5 functionality
  - Making fields required using `required`
  - Constraining the length of data: 
    - `minlength`, `maxlength`: for text data
@@ -43,10 +43,21 @@ On client side, validation can be done in two ways -
 When data entered matches the above client validation, it gets assigned a psuedo-class `:valid` and `:invalid` if it doesn't.
 
 
- 1. JavaScript 
-- format checks (code)
-- required checks
+ ### JavaScript 
+- Inline validation using JS
 - Constraint validation API
+
+For older browsers that do not support HTML5, we will need to use JavaScript for form validation. When implementing form validation, there are a few things to consider - 
+1. What is defined as "valid" data? 
+   1. This helps you answer questions such as the format, length, required fields and type of data. 
+2. What happens when invalid data is entered?
+   1. This will help you define the user experience of the validation - whether to show an error message inline or top of the form, how detailed should the error message be, should the form be sumitted anyways? Should there be analytics to track invalid format of data? 
+
+
+**Inline validation using JS**
+
+**Constraint validation API**
+
 <!-- TODO: Write content from  "Validating forms using js section here https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation-->
 
 Server side:
@@ -60,3 +71,10 @@ https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation
 https://developer.mozilla.org/en-US/docs/Learn/Forms/HTML5_input_types
 https://developer.mozilla.org/en-US/docs/Learn/Server-side/First_steps/Website_security
 https://www.smashingmagazine.com/2009/07/web-form-validation-best-practices-and-tutorials/
+
+TODO:
+1. Client side JS code
+2. Constraint validation API code
+3. Best practices
+4. Server side validation
+5. Gyf of validation in practice
