@@ -107,16 +107,16 @@ Server side:
 
 Remember: client side validation is not the only security measure you should do. You must also validate the data received from your client on server side code to ensure that the data matches what you expect it to be. 
 
+## Resources
+- https://medium.com/@andrew.burton/form-validation-best-practices-8e3bec7d0549
+- https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation
+- https://developer.mozilla.org/en-US/docs/Learn/Forms/HTML5_input_types
+- https://developer.mozilla.org/en-US/docs/Learn/Server-side/First_steps/Website_security
+- https://www.smashingmagazine.com/2009/07/web-form-validation-best-practices-and-tutorials/
 
-https://medium.com/@andrew.burton/form-validation-best-practices-8e3bec7d0549
-https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation
-https://developer.mozilla.org/en-US/docs/Learn/Forms/HTML5_input_types
-https://developer.mozilla.org/en-US/docs/Learn/Server-side/First_steps/Website_security
-https://www.smashingmagazine.com/2009/07/web-form-validation-best-practices-and-tutorials/
-
-TODO:
+### TODO:
 1. Client side JS code  (NEXT TIME)
-2. Constraint validation API code (DONE)
+2. ~Constraint validation API code~ (DONE)
 3. Best practices
 4. Server side validation
 5. Gyf of validation in practice
