@@ -10,10 +10,10 @@ Form validation can happen both on client side and server side. You may have not
 ## Common use cases of form validation
 
 Form validation is needed anytime you accept data from a user. This may include - 
-1. Format validation: such as format of email address, phone number etc.
+1. Format validation such as format of email address, phone number etc.
 2. Required value validation
-3. Type of data validation: such as string vs number
-4. Valid data checks: such as correct postal code, country, etc. 
+3. Checking the type of data such as string vs number
+4. Valid data checks such as correct postal code, country, etc. 
    
 ## Why do we need to validate form data?
 1. Malicious data could be entered that could lead to SQL injections, malformed data
@@ -43,7 +43,7 @@ On client side, validation can be done in two ways -
 When data entered matches the above client validation, it gets assigned a psuedo-class `:valid` and `:invalid` if it doesn't.
 
 
- ### JavaScript 
+ ### Javascript 
 - Inline validation using JS
 - Constraint validation API
 
@@ -55,15 +55,57 @@ For older browsers that do not support HTML5, we will need to use JavaScript for
 
 
 **Inline validation using JS**
+<TODO>
+
 
 **Constraint validation API**
+`required` and `pattern` can help perform basic validation, but if you want more complex validation and provide detailed error messaging, you can use Constraint Validation API. Some methods provided by this API are - 
 
-<!-- TODO: Write content from  "Validating forms using js section here https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation-->
+1. `checkValidity`
+2. `setCustomValidity`
+3. `reportValidity`
+   
+The following properties are useful - 
+   1. `validity`
+   2. `validationMessage`
+   3. `willValidate`
+
+
+## Examples: 
+Check out this following example inspired from Mozilla docs on how to validate using HTML5 inbuilt methods such as `required`, `length` in conjunction with Constraint Validation API to provide detailed error messages.
+
+**Validation using HTML5**
+<form>
+<label for="firstname"> First Name: </label>
+<input type="text" name="firstname" id="firstname" required length="45">
+<button>Submit</button>
+</form>
+
+
+**Validation using Constraint Validation API**
+
+```JS
+const nameField = document.querySelector('input');
+const form = document.querySelector('form');
+
+nameField.addEventListener('input', () => {
+  nameField.setCustomValidity('');
+  nameField.checkValidity();
+});
+
+nameField.addEventListener('invald', () => {
+  if(nameField.value === '') {
+nameField.setCustomValidity('Please fill in your First Name.);
+  } else  {
+    nameField.setCustomValidity('First Name can only have uppercase and lowercase letters')
+  }
+})
+
+```
 
 Server side:
 
-
-Remember: client side validation is not the only security measure you should do. You must also validate the data received from your client on server side code. 
+Remember: client side validation is not the only security measure you should do. You must also validate the data received from your client on server side code to ensure that the data matches what you expect it to be. 
 
 
 https://medium.com/@andrew.burton/form-validation-best-practices-8e3bec7d0549
@@ -73,8 +115,8 @@ https://developer.mozilla.org/en-US/docs/Learn/Server-side/First_steps/Website_s
 https://www.smashingmagazine.com/2009/07/web-form-validation-best-practices-and-tutorials/
 
 TODO:
-1. Client side JS code
-2. Constraint validation API code
+1. Client side JS code  (NEXT TIME)
+2. Constraint validation API code (DONE)
 3. Best practices
 4. Server side validation
 5. Gyf of validation in practice
