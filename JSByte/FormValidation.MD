@@ -3,9 +3,15 @@
 Forms are ubiquitous in internet world. Some apps such as Gmail use forms to collect data to sign up users and give an email address, whereas some apps such as PayPal use forms to do online shopping and process payment from a buyer to a merchant. Some web forms are used to apply for a new car loan whereas some forms are used to order pizza for dinner. It is therefore important that when forms are developed, the data that is collected is cleansed and removed of any malicious data. This is called form validation.
 
 ## What are the different types of form validations?
-Form validation can happen both on client side and server side. You may have noticed that in some forms, as soon as you enter an invalid email address, the form gives an error "Please enter a valid email". This "immediate" type of validation is usually done via client-side code using JavaScript. In other cases, you may have noticed that sometimes when you fill out a form and enter details such as a credit card, a form may show a loading screen and then show an error "This credit card is invalid". In this kind of validation, the form made a call to its server side code, and returned a validation error. This validation case where a call to the server was made is called server side validation. 
+Form validation can happen on - 
+1. Client side and 
+2. server side. 
+   
+You may have noticed that in some forms, as soon as you enter an invalid email address, the form gives an error "Please enter a valid email". This "immediate" type of validation is usually done via client-side code using JavaScript. 
 
-<!-- ### TODO insert form validation snapshot here <gif>  -->
+In other cases, you may have noticed that sometimes when you fill out a form and enter details such as a credit card, a form may show a loading screen and then show an error "This credit card is invalid". Here, the form made a call to its server side code, and returned a validation error. This validation case where a call to the server was made is called server side validation. 
+
+## TODO insert form validation snapshot here <gif> 
 
 ## Common use cases of form validation
 
@@ -55,7 +61,26 @@ For older browsers that do not support HTML5, we will need to use JavaScript for
 
 
 **Inline validation using JS**
-<TODO>
+```HTML 
+<form method="post" onSubmit="return validateForm()">
+<label for="firstname"> First Name: </label>
+<input type="text" name="firstname" id="firstname" required maxlength="45">
+<button>Submit</button>
+</form>
+```
+```JS
+function validateform() {
+  let valid = true;
+  const firstNameField = document.getElementById("firstname");
+  if(!firstNameField.value || firstNameField.value.length > 45){
+    valid = false;
+  }
+  
+
+return valid;
+}
+
+```
 
 
 **Constraint validation API**
@@ -74,13 +99,13 @@ The following properties are useful -
 ## Examples: 
 Check out this following example inspired from Mozilla docs on how to validate using HTML5 inbuilt methods such as `required`, `length` in conjunction with Constraint Validation API to provide detailed error messages.
 
-**Validation using HTML5**
+```HTML
 <form>
 <label for="firstname"> First Name: </label>
 <input type="text" name="firstname" id="firstname" required length="45">
 <button>Submit</button>
 </form>
-
+```
 
 **Validation using Constraint Validation API**
 
@@ -113,10 +138,13 @@ Remember: client side validation is not the only security measure you should do.
 - https://developer.mozilla.org/en-US/docs/Learn/Forms/HTML5_input_types
 - https://developer.mozilla.org/en-US/docs/Learn/Server-side/First_steps/Website_security
 - https://www.smashingmagazine.com/2009/07/web-form-validation-best-practices-and-tutorials/
+- https://css-tricks.com/form-validation-part-1-constraint-validation-html/
 
 ### TODO:
-1. Client side JS code  (NEXT TIME)
-2. ~Constraint validation API code~ (DONE)
-3. Best practices
+1. ~Client side JS code~  
+2. ~Constraint validation API code~ 
+3. Best practices (NEXT)
 4. Server side validation
 5. Gyf of validation in practice
+6. Show images of all validations / codesandbox links
+7. Test all code
