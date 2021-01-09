@@ -22,16 +22,16 @@ Form validation is needed anytime you accept data from a user. This may include 
 4. Valid data checks such as correct postal code, country, etc. 
    
 ## Why do we need to validate form data?
-1. Malicious data could be entered that could lead to SQL injections, malformed data
+- Malicious data could be entered that could lead to SQL injections, malformed data
 
 
-<!-- <<
+## TODO: format the following
 You will need form validation when data is entered in a form. A user will enter data, which could be email, phone number. To be sure that the data entered by the user is what it is expected to, you will need to validate the data. 
 not only is this good for your API, but is also a way of ensuring security. 
 - security attacks like SQL injection
 - ensuring all data is entered 
 - ensuring data is what it expected to be
->> -->
+
 
 
 ## How to validate form data
