@@ -1,17 +1,18 @@
 # JavaScript Form Validation – How to Check User Input on HTML Forms with JS Example Code
 
-Forms are ubiquitous in internet world. Some apps such as Gmail use forms to collect data to sign up users and give an email address, whereas some apps such as PayPal use forms to do online shopping and process payment from a buyer to a merchant. Some web forms are used to apply for a new car loan whereas some forms are used to order pizza for dinner. It is therefore important that when forms are developed, the data that is collected is cleansed and removed of any malicious data. This is called form validation.
+Forms are ubiquitous in the internet world. Some apps such as Gmail use forms to collect data to sign up users and give an email address, whereas some apps such as PayPal use forms to do online shopping and process payment from a buyer to a merchant. Some web forms are used to apply for a new car loan whereas some forms are used to order pizza for dinner. It is therefore important that when forms are developed, the data that is collected is cleansed and removed of any malicious data. This is called form validation.
 
 ## What are the different types of form validations?
 Form validation can happen on - 
 1. Client side and 
-2. server side. 
-   
-You may have noticed that in some forms, as soon as you enter an invalid email address, the form gives an error "Please enter a valid email". This "immediate" type of validation is usually done via client-side code using JavaScript. 
+2. Server side. 
+
+
+Client side validation occurs using HTML5 attributes and client side JavaScript. You may have noticed that in some forms, as soon as you enter an invalid email address, the form gives an error "Please enter a valid email". This immediate type of validation is usually done via client side JavaScript.
 
 In other cases, you may have noticed that sometimes when you fill out a form and enter details such as a credit card, a form may show a loading screen and then show an error "This credit card is invalid". Here, the form made a call to its server side code, and returned a validation error. This validation case where a call to the server was made is called server side validation. 
 
-## TODO insert form validation snapshot here <gif> 
+ <!-- TODO insert form validation snapshot here <gif>  -->
 
 ## Common use cases of form validation
 
@@ -128,9 +129,15 @@ nameField.setCustomValidity('Please fill in your First Name.);
 
 ```
 
-Server side:
+## Server side:
+Client side validation is not the only validation check you should do. You must also validate the data received from your client on server side code to ensure that the data matches what you expect it to be. This can be used to perform business logic verifications that do not need to live on client side. 
 
-Remember: client side validation is not the only security measure you should do. You must also validate the data received from your client on server side code to ensure that the data matches what you expect it to be. 
+## Best practices
+1. Always have server side validation since client side validation is not secure and sure shot.(??) 
+2. Provide detailed error message in-context with the field that produced an error.
+3. Provide an example of what the data should look like in case of an error message, such as - "Email did not match format - test@example.com"
+4. Avoid using single error pages that involve redirection. This is bad UX and forces the user to go back to previous page to fix the form and lose context.
+5. Always mark requried fields.
 
 ## Resources
 - https://medium.com/@andrew.burton/form-validation-best-practices-8e3bec7d0549
@@ -143,8 +150,9 @@ Remember: client side validation is not the only security measure you should do.
 ### TODO:
 1. ~Client side JS code~  
 2. ~Constraint validation API code~ 
-3. Best practices (NEXT)
-4. Server side validation
+3. ~Best practices~
+4. ~Server side validation~
 5. Gyf of validation in practice
 6. Show images of all validations / codesandbox links
 7. Test all code
+8. Read through
