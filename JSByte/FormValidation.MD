@@ -12,7 +12,7 @@ Client side validation occurs using HTML5 attributes and client side JavaScript.
 
 In other cases, you may have noticed that sometimes when you fill out a form and enter details such as a credit card, a form may show a loading screen and then show an error "This credit card is invalid". Here, the form made a call to its server side code, and returned a validation error. This validation case where a call to the server was made is called server side validation. 
 
- <!-- TODO insert form validation snapshot here <gif>  -->
+ <!-- TODO insert form validation snapshot here <gif>  <screen recording created> -->
 
 ## Common use cases of form validation
 
@@ -23,21 +23,15 @@ Form validation is needed anytime you accept data from a user. This may include 
 4. Valid data checks such as correct postal code, country, etc. 
    
 ## Why do we need to validate form data?
-- Malicious data could be entered that could lead to SQL injections, malformed data
-
-
-## TODO: format the following
-You will need form validation when data is entered in a form. A user will enter data, which could be email, phone number. To be sure that the data entered by the user is what it is expected to, you will need to validate the data. 
-not only is this good for your API, but is also a way of ensuring security. 
-- security attacks like SQL injection
-- ensuring all data is entered 
-- ensuring data is what it expected to be
+You will need form validation when data is entered in a form. A user will enter data, which could be email, phone number. To be sure that the data entered by the user is what it is expected to, you will need to validate the data. Malicious data could be entered that could lead to SQL injections. Malformed data can also give errorneous results from your API.
 
 
 
 ## How to validate form data
 On client side, validation can be done in two ways - 
+
  ### Using built in HTML5 functionality
+
  - Making fields required using `required`
  - Constraining the length of data: 
    - `minlength`, `maxlength`: for text data
@@ -49,6 +43,22 @@ On client side, validation can be done in two ways -
  
 When data entered matches the above client validation, it gets assigned a psuedo-class `:valid` and `:invalid` if it doesn't.
 
+Let's try an example - 
+
+```HTML
+<form>
+<label for="firstname"> First Name: </label>
+<input type="text" name="firstname" id="firstname" required maxlength="45">
+<label for="lastname"> Last Name: </label>
+<input type="text" name="lastname" id="lastname" required maxlength="45">
+<button>Submit</button>
+</form>
+```
+Here we have two required fields - First Name and Last Name. Try this example in JSFidle. If you skip either of these fields and press submit, "Please fill out this field". This is validation using in-built HTML5.
+
+<TODO: insert screenshot here: example2>
+
+Link to JSFiddle: https://jsfiddle.net/58xc2qyj/
 
  ### Javascript 
 - Inline validation using JS
@@ -62,6 +72,8 @@ For older browsers that do not support HTML5, we will need to use JavaScript for
 
 
 **Inline validation using JS**
+<!-- <TODO>  convert this to gif-->
+
 ```HTML 
 <form method="post" onSubmit="return validateForm()">
 <label for="firstname"> First Name: </label>
@@ -97,7 +109,9 @@ The following properties are useful -
    3. `willValidate`
 
 
-## Examples: 
+**Examples:**
+<!-- <TODO>  convert this to gif-->
+
 Check out this following example inspired from Mozilla docs on how to validate using HTML5 inbuilt methods such as `required`, `length` in conjunction with Constraint Validation API to provide detailed error messages.
 
 ```HTML
@@ -108,7 +122,6 @@ Check out this following example inspired from Mozilla docs on how to validate u
 </form>
 ```
 
-**Validation using Constraint Validation API**
 
 ```JS
 const nameField = document.querySelector('input');
@@ -152,7 +165,7 @@ Client side validation is not the only validation check you should do. You must 
 2. ~Constraint validation API code~ 
 3. ~Best practices~
 4. ~Server side validation~
-5. Gyf of validation in practice
-6. Show images of all validations / codesandbox links
+5. ~Gif of validation in practice~ 
+6. Show images of all validations / jsfiddle links(NEXT)
 7. Test all code
 8. Read through
