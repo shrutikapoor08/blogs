@@ -72,7 +72,9 @@ For older browsers that do not support HTML5, we will need to use JavaScript for
 
 
 **Inline validation using JS**
-<!-- <TODO>  convert this to gif-->
+<!-- <TODO>  NEXT-->
+
+https://jsfiddle.net/4kb3nzve/
 
 ```HTML 
 <form method="post" onSubmit="return validateForm()">
@@ -112,12 +114,14 @@ The following properties are useful -
 **Examples:**
 <!-- <TODO>  convert this to gif-->
 
-Check out this following example inspired from Mozilla docs on how to validate using HTML5 inbuilt methods such as `required`, `length` in conjunction with Constraint Validation API to provide detailed error messages.
+Check out this following example inspired by MDN docs on how to validate using HTML5 inbuilt methods such as `required`, `length` in conjunction with Constraint Validation API to provide detailed error messages.
+
+JSFiddle: https://jsfiddle.net/xz2wjLck/1/
 
 ```HTML
 <form>
 <label for="firstname"> First Name: </label>
-<input type="text" name="firstname" id="firstname" required length="45">
+<input type="text" name="firstname" required id="firstname">
 <button>Submit</button>
 </form>
 ```
@@ -125,19 +129,16 @@ Check out this following example inspired from Mozilla docs on how to validate u
 
 ```JS
 const nameField = document.querySelector('input');
-const form = document.querySelector('form');
 
 nameField.addEventListener('input', () => {
   nameField.setCustomValidity('');
   nameField.checkValidity();
+    console.log(nameField.checkValidity());
+
 });
 
-nameField.addEventListener('invald', () => {
-  if(nameField.value === '') {
-nameField.setCustomValidity('Please fill in your First Name.);
-  } else  {
-    nameField.setCustomValidity('First Name can only have uppercase and lowercase letters')
-  }
+nameField.addEventListener('invalid', () => {
+  nameField.setCustomValidity('Please fill in your First Name.');
 })
 
 ```
@@ -166,6 +167,7 @@ Client side validation is not the only validation check you should do. You must 
 3. ~Best practices~
 4. ~Server side validation~
 5. ~Gif of validation in practice~ 
-6. Show images of all validations / jsfiddle links(NEXT)
-7. Test all code
-8. Read through
+6. ~Show images of all validations~
+7. jsfiddle links(NEXT - HTML /JS validation)
+8. Test all code
+9. Read through
