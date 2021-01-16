@@ -1,6 +1,9 @@
 # JavaScript Form Validation – How to Check User Input on HTML Forms with JS Example Code
 
-Forms are ubiquitous in the internet world. Some apps such as Gmail use forms to collect data to sign up users and give an email address, whereas some apps such as PayPal use forms to do online shopping and process payment from a buyer to a merchant. Some web forms are used to apply for a new car loan whereas some forms are used to order pizza for dinner. It is therefore important that when forms are developed, the data that is collected is cleansed and removed of any malicious data. This is called form validation.
+Forms are ubiquitous in web applications. Some apps such as Gmail use forms to collect data to sign up users and provide an email address, whereas some apps such as PayPal use forms to fulfill online transactions to facilitate shopping experience. Some web forms are used to apply for a new car loan whereas some forms are used to order pizza for dinner. It is, therefore, important that the data collected from forms is cleansed, formatted correctly and devoid of any malicious code. This is called form validation.
+
+We need form validation anytime we are accepting a user input. We must ensure that the data entered is in correct format, lies within a valid range of data (such as for date fields) and does not contain malicious code that could lead to SQL injections. Malformed or missing data can also causes erroneous results from API. 
+
 
 ## What are the different types of form validations?
 Form validation can happen on - 
@@ -10,27 +13,28 @@ Form validation can happen on -
 
 Client side validation occurs using HTML5 attributes and client side JavaScript. You may have noticed that in some forms, as soon as you enter an invalid email address, the form gives an error "Please enter a valid email". This immediate type of validation is usually done via client side JavaScript.
 
-In other cases, you may have noticed that sometimes when you fill out a form and enter details such as a credit card, a form may show a loading screen and then show an error "This credit card is invalid". Here, the form made a call to its server side code, and returned a validation error. This validation case where a call to the server was made is called server side validation. 
-
  <!-- TODO insert form validation snapshot here <gif>  <screen recording created> -->
 
-## Common use cases of form validation
+In other cases, you may have noticed that when you fill out a form and enter details such as a credit card, it may show a loading screen and then show an error "This credit card is invalid". Here, the form made a call to its server side code, and returned a validation error after performing additional credit card checks. This validation case where a server-side call is made is called server side validation. 
 
+
+## What should be validated? 
 Form validation is needed anytime you accept data from a user. This may include - 
-1. Format validation such as format of email address, phone number etc.
-2. Required value validation
-3. Checking the type of data such as string vs number
-4. Valid data checks such as correct postal code, country, etc. 
-   
-## Why do we need to validate form data?
-You will need form validation when data is entered in a form. A user will enter data, which could be email, phone number. To be sure that the data entered by the user is what it is expected to, you will need to validate the data. Malicious data could be entered that could lead to SQL injections. Malformed data can also give errorneous results from your API.
+1. Validating the format of fields such as email address, phone number, zip code, name, password.
+2. Validating mandatory fields
+3. Checking the type of data such as string vs number for fields such as social security number.
+4. Ensuring value entered is a valid value such as country, date, etc. 
 
 
 
-## How to validate form data
+## Client side validation
 On client side, validation can be done in two ways - 
+1. Using HTML5 functionality
+2. Using JavaScript
 
  ### Using built in HTML5 functionality
+
+HTML5 provides a bunch of attributes to help validate data. Here are some common validation cases: 
 
  - Making fields required using `required`
  - Constraining the length of data: 
@@ -41,7 +45,7 @@ On client side, validation can be done in two ways -
  - Specifying data pattern using `pattern`: 
    - specifies a regex pattern that entered form data needs to match
  
-When data entered matches the above client validation, it gets assigned a psuedo-class `:valid` and `:invalid` if it doesn't.
+When the input value matches the above HTML5 validation, it gets assigned a psuedo-class `:valid` and `:invalid` if it doesn't.
 
 Let's try an example - 
 
@@ -56,50 +60,81 @@ Let's try an example -
 ```
 Here we have two required fields - First Name and Last Name. Try this example in JSFidle. If you skip either of these fields and press submit, "Please fill out this field". This is validation using in-built HTML5.
 
-<TODO: insert screenshot here: example2>
-
 Link to JSFiddle: https://jsfiddle.net/58xc2qyj/
 
- ### Javascript 
-- Inline validation using JS
-- Constraint validation API
+  ###  Using JavaScript 
 
-For older browsers that do not support HTML5, we will need to use JavaScript for form validation. When implementing form validation, there are a few things to consider - 
+When implementing form validation, there are a few things to consider - 
 1. What is defined as "valid" data? 
    1. This helps you answer questions such as the format, length, required fields and type of data. 
 2. What happens when invalid data is entered?
    1. This will help you define the user experience of the validation - whether to show an error message inline or top of the form, how detailed should the error message be, should the form be sumitted anyways? Should there be analytics to track invalid format of data? 
 
+JavaScript validation can be performed in two ways:  
+1. Inline validation using JavaScript
+1. HTML5 Constraint validation API
 
-**Inline validation using JS**
-<!-- <TODO>  NEXT-->
 
-https://jsfiddle.net/4kb3nzve/
+#### Inline validation using JavaScript
 
-```HTML 
-<form method="post" onSubmit="return validateForm()">
-<label for="firstname"> First Name: </label>
-<input type="text" name="firstname" id="firstname" required maxlength="45">
-<button>Submit</button>
+```html
+<form id="form">
+  <label for="firstname"> First Name* </label>
+  <input type="text" name="firstname" id="firstname">
+  <button id="submit">Submit</button>
+
+  <span role="alert" id="nameError" aria-hidden="true"> Please enter First Name </span>
 </form>
 ```
-```JS
-function validateform() {
-  let valid = true;
-  const firstNameField = document.getElementById("firstname");
-  if(!firstNameField.value || firstNameField.value.length > 45){
-    valid = false;
-  }
-  
 
-return valid;
+```javascript
+const submit = document.getElementById("submit");
+
+submit.addEventListener('click', validate);
+
+function validate(e) {
+  e.preventDefault();
+
+  const firstNameField = document.getElementById("firstname");
+  let valid = true;
+
+  if (!firstNameField.value) {
+    const nameError = document.getElementById("nameError");
+    nameError.classList.add("visible");
+    firstNameField.classList.add("invalid");
+    nameError.setAttribute('aria-hidden', false);
+    nameError.setAttribute('aria-invalid', true);
+
+  }
+  return valid;
 }
 
 ```
 
+```css
+#nameError {
+  display: none;
+  font-size: 0.8em;
+}
 
-**Constraint validation API**
-`required` and `pattern` can help perform basic validation, but if you want more complex validation and provide detailed error messaging, you can use Constraint Validation API. Some methods provided by this API are - 
+#nameError.visible {
+  display: block;
+}
+
+input.invalid {
+  border-color: red;
+}
+
+```
+
+JSFiddle: https://jsfiddle.net/0tq3e49w/4/
+
+In this example, we check for required fields using JavaScript. If a required field is not present, we use CSS to show the error message. Aria labels are modified accordingly to signal an error. By using CSS to show / hide an error, we are reducing the number of DOM manipulations we need to make. The error message is provided in-context thereby making the user experience intuitive. 
+
+
+
+#### HTML5 Constraint validation API
+`required` and `pattern` HTML attributes can help perform basic validation, but if you want more complex validation or provide detailed error messaging, you can use Constraint Validation API. Some methods provided by this API are - 
 
 1. `checkValidity`
 2. `setCustomValidity`
@@ -114,7 +149,7 @@ The following properties are useful -
 **Examples:**
 <!-- <TODO>  convert this to gif-->
 
-Check out this following example inspired by MDN docs on how to validate using HTML5 inbuilt methods such as `required`, `length` in conjunction with Constraint Validation API to provide detailed error messages.
+In this example, we will validate using HTML5 inbuilt methods such as `required`, `length` in conjunction with Constraint Validation API to provide detailed error messages.
 
 JSFiddle: https://jsfiddle.net/xz2wjLck/1/
 
@@ -127,7 +162,7 @@ JSFiddle: https://jsfiddle.net/xz2wjLck/1/
 ```
 
 
-```JS
+```javascript
 const nameField = document.querySelector('input');
 
 nameField.addEventListener('input', () => {
@@ -144,14 +179,15 @@ nameField.addEventListener('invalid', () => {
 ```
 
 ## Server side:
-Client side validation is not the only validation check you should do. You must also validate the data received from your client on server side code to ensure that the data matches what you expect it to be. This can be used to perform business logic verifications that do not need to live on client side. 
+Client side validation is not the only validation check you should do. You must also validate the data received from your client on server side code to ensure that the data matches what you expect it to be. This can be used to perform business logic verifications that should not live on client side. 
+
 
 ## Best practices
-1. Always have server side validation since client side validation is not secure and sure shot.(??) 
+1. Always have server side validation since malicious actors can bypass client side validation.
 2. Provide detailed error message in-context with the field that produced an error.
 3. Provide an example of what the data should look like in case of an error message, such as - "Email did not match format - test@example.com"
-4. Avoid using single error pages that involve redirection. This is bad UX and forces the user to go back to previous page to fix the form and lose context.
-5. Always mark requried fields.
+4. Avoid using single error pages that involve redirection. This is bad user experience and forces the user to go back to previous page to fix the form and lose context.
+5. Always mark required fields.
 
 ## Resources
 - https://medium.com/@andrew.burton/form-validation-best-practices-8e3bec7d0549
@@ -168,6 +204,7 @@ Client side validation is not the only validation check you should do. You must 
 4. ~Server side validation~
 5. ~Gif of validation in practice~ 
 6. ~Show images of all validations~
-7. jsfiddle links(NEXT - HTML /JS validation)
-8. Test all code
-9. Read through
+7. ~jsfiddle links(NEXT - HTML /JS validation)~
+8. ~Test all code~
+9. ~Read through~
+10. Insert screenshots
