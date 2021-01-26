@@ -4,13 +4,13 @@ I know that a lot of you want or know someone who wants to start learning coding
 
 In this article, I will dive into the resources with the least committment to get started, a proposed schedule of getting started, and a list of resources to watch to stay yourself in the know-how of web development. This plan is going to be focussed on getting you a job, and therefore project-heavy.
 
-Step 0: Collect a list of "inspirations"
-Step 1: Know the basics.
-Step 2.0: Rate the inspirations. 
-Step 2: Practice building with basics. 
-Step 3: Step up challenge - learn a framework. 
-Step 4.0: Rate the inspirations.
-Step 4: Implement the framework. - build an inspiration. 
-Step 5: Learn a library for the framework. 
-Step 6: Step up challenge - learn the other side of stack(front-end vs back-end)
+1. Step 0: Collect a list of "inspirations"
+2. Step 1: Know the basics.
+3. Step 2.0: Rate the inspirations. 
+4. Step 2: Practice building with basics. 
+5. Step 3: Step up challenge - learn a framework. 
+6. Step 4.0: Rate the inspirations.
+7. Step 4: Implement the framework. - build an inspiration. 
+8. Step 5: Learn a library for the framework. 
+9. Step 6: Step up challenge - learn the other side of stack(front-end vs back-end)
 
