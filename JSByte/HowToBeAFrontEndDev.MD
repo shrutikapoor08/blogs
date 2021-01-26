@@ -1,16 +1,18 @@
 # Bootcamp: Becoming a web developer in 2021. 
 
-I have been a front end dev for over 7 years now. I worked the first two years as a freelance developer, co-founder of my Web development agency - World Web Warriors, and then accepted a job as a professional web developer at Telus Communications in Vancouver, Canada for three years. In 2017, I moved to sunny California and started working as a Software Engineer at PIX Systems, San Francisco. Most recently, I have been working at PayPal Inc for the last three years. These years have been really rewarding. Of all these years, my favourite moments have been the ones when I was solving deep technical problems since these are the ones that got me most nervous in the moment and after I was done, gave me a huge sense of achievement. There is a great joy in overcoming your deepest fears and treading deep waters. 
+I have been a web developer for over 7 years now. I worked the first two years as a freelance developer, then as co-founder and CTO of my web development startup - World Web Warriors, and then accepted a job as a professional web developer at Telus Communications in Vancouver, Canada for three years. In 2017, I moved to sunny California and started working as a Software Engineer at PIX Systems, San Francisco. Most recently, I have been working at PayPal Inc for the last three years. These years have been really rewarding. Of all these years, my favourite moments have been the ones when I was solving deep technical problem and felt super nervous in the moment because after I was done, these were the challenges that gave me a huge sense of achievement. There is a great joy in overcoming your deepest fears and treading deep waters. 
 
-I know that a lot of you want or know someone who wants to start learning coding. Someone who is too afraid to take this bold move, someone who thinks that coding is hard and not sure if they are the right fit. This article is for them! It is for that budding web developer who is too scared to open the code editor and start coding because they are afraid they may get stuck, and there would be no way out. I am here to tell you - You got this! 
+I know that a lot of you want or know someone who wants to start learning web development or coding in general. Perhaps you are too afraid to take this bold move, perhaps you think that coding is hard and not sure if you are the right fit. Maybe you are too scared to open the code editor and start coding because you are afraid you may get stuck and lose motivation, or you don't know where to get started in the vast sea of knowledge. I am here to tell you - You got this! We will get through this together! 
 
-In this article, I will dive into the resources with the least committment to get started, a proposed schedule of getting started, and a list of resources to watch to stay yourself in the know-how of web development. This plan is going to be focussed on getting you a job, and therefore project-heavy.
+In this article, I will dive into the resources, a proposed schedule of getting started, and a list of resources to study to stay yourself to get yourself started as a web developer. This plan is going to be focussed on getting you a job, and therefore project-heavy.
 
-## Debunking some myths:
+## Debunking some myths: 
 1. You do not need an expensive laptop or setup. 
 2. You do not have to go to college to become a web developer.
 3. You do not need to be X years old to get started ( X = any number that makes you feel it is too late for you to get started).
 4. You do not need to know all the technologies before applying for a job.
+5. You do not need to spend tons of money to get started.
+6. You are already smart enough to be a web developer. 
 
 ## Getting started: the things you need
 1. Equipment: 
@@ -20,14 +22,14 @@ In this article, I will dive into the resources with the least committment to ge
 5. List of inspirations:
 6. Support group:
 
-## Resources
+## Resources: where to study 
 1. Online resources: 
 2. In person resources: 
 3. Books: 
 4. Meetups: 
 5. Podcasts
 
-## Bootcamp
+## Bootcamp: How to study
 1. Step 1: Know the basics.
 1.1 Step 1.1: Rate the inspirations. 
 2. Step 2: Practice building with basics. 
