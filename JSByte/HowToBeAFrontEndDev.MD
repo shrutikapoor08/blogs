@@ -19,8 +19,9 @@ In this article, I will dive into the resources, a proposed schedule of getting 
 2. Finances: 
 3. Time committment: 
 4. Self care: 
-5. List of inspirations:
+5. List of people who inspire you:
 6. Support group:
+7. List of "cool project ideas":
 
 ## Resources: where to study 
 1. Online resources: 
@@ -31,7 +32,6 @@ In this article, I will dive into the resources, a proposed schedule of getting 
 
 ## Bootcamp: How to study
 1. Step 1: Know the basics.
-1.1 Step 1.1: Rate the inspirations. 
 2. Step 2: Practice building with basics. 
 3. Step 3: Step up challenge - learn a framework. 
 4. Step 4: Rate the inspirations.
