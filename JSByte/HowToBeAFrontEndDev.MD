@@ -22,38 +22,82 @@ In this article, I will dive into the resources, a proposed schedule of getting 
 ## Getting started: the things you need
 
 1. Equipment:
+    - computer
+    - internet connection
+    - code editor
 2. Finances:
 3. Time commitment:
+    - 2 - 4 hours / week
 4. Self care:
+    - Affirmations
+    - Break day 
+    - "self care ritual" <EXPAND>
+
 5. List of people who inspire you:
+    - mentor
+    - people in the industry
+    - people in your current workplace
+    
 6. Support group:
-7. List of "cool project ideas": These will be your inspirations in this journey.
+    - your group of friends who make you feel like you can achieve amazing things
+    - other new developers in the industry. you can find people with similar interest on the same journey as you by going to local meetups in your area. [Here is an example of a local meetup in Bay area](https://www.meetup.com/Free-Code-Camp-SF/events/276180196) that welcomes newcomers and provides a space for people to learn and grow with each other.
+    
+7. List of "cool project ideas": These will be your inspirations for building cool things. We will be using this list of ideas to build projects. These could be anything you want to build regardless of how crazy it sounds. Some examples are:
+    - Music player app
+    - Pomodoro timer
+    - random joke generator
 
 ## Resources: Where to study
 
+### Free Resources
+
 1. Online resources:
+    - https://www.freecodecamp.org/
     - https://fullstackopen.com/
-2. In person resources:
+    - [JavaScript 30 by Wes Bos](https://javascript30.com/)
+    - Youtube channels 
+        - 
+2. In-person resources:
 3. Books:
-4. Meetups:
-5. Podcasts
+4. Local Meetups:
+    - Women Who Code https://www.meetup.com/Women-Who-Code-SF
+    - Modern Web: https://www.meetup.com/modernweb
+    
+5. Podcasts 
+    - Front end happy hour: https://frontendhappyhour.com/
+    - SyntaxFM : https://syntax.fm/
+    - JavaScript Jabber: https://devchat.tv/podcasts/js-jabber/
+    - Developer Tea : https://spec.fm/podcasts/developer-tea
+    - Toolsday - https://spec.fm/podcasts/toolsday
+
+
+### Paid Resources
+
+1. Online resources:
+    - https://frontendmasters.com/
+    - https://www.udemy.com/
+    - https://egghead.io/
+2. In-person resources:
+3. Books:
+    - Eloquent JavaScript, Marijn Haverbeke
 
 ## Bootcamp Process: 
 
-1. Step 1: Learn the fundamentals: All of the web development is based on the following three pillars - HTML, CSS and JavaScript. Just like how when constructing a building, the foundation is the most important part, similarly in constructing a web application, JavaScript, HTML and CSS are super important.
-1. Step 2: Set up your portfolio on GitHub.
-1. Step 2: Practice building with basics. Add this to your portfolio.
-1. Step 3: Step up challenge - learn a framework.
-1. Step 4.1: Implement the framework. - build an inspiration. Add this to your portfolio.
-1. Step 5: Learn a library for the framework.
-1. Step 5: Implement your next inspiration idea using the library. Add this to your portfolio.
-1. Step : Learn a testing framework. : Build test coverage and add this to your portfolio.
-1. Step 7: Apply for a job using your portfolio 
-1. Step 8: Find a mentor. Get feedback on your skills and portfolio.
-1. Step 6: Step up challenge - learn the other side of stack(front-end vs back-end)
-1. Step 9: Continue iterating. 
+1. Learn the fundamentals: Web development is based on following three elements - HTML, CSS and JavaScript.
+1. Set up your portfolio on GitHub <101 on git> <examples of portfolio> 
+1. Practice building with basics. Add this to your portfolio.
+1. Step up challenge - learn a framework.
+1. Implement the framework. - build an inspiration. Add this to your portfolio.
+1. Learn a library for the framework.
+1. Implement your next inspiration idea using the library. Add to your portfolio.
+1. Learn a testing framework : Build test coverage. Add to your portfolio.
+1. Get a freelance job using your portfolio. 
+1. Find a mentor. Get feedback on your skills and portfolio.
+1. Step up challenge - learn the other side of stack(front-end vs back-end)
+1. Apply for a full time job. You are ready.
+1. Continue iterating. 
 
-## Bootcamp curriculum: What to study (MEAT of the article)
+## Bootcamp curriculum: What to study 
 
 1. HTML
 
@@ -84,7 +128,7 @@ In this article, I will dive into the resources, a proposed schedule of getting 
 3. JavaScript
 
 
-## Picking a stream (Front end vs back end)
+## Picking a stack (Front end vs back end)
 
 Depending on your interest and passion, you may want to focus on front end development or back end development. Front end development is the development of user interfaces, and uses technologies like HTML, CSS, JavaScript.
 Back end development is the development of software that facilitates user interface such as building APIs and uses back end technolgoies such as NodeJS.
@@ -96,3 +140,5 @@ Back end development is the development of software that facilitates user interf
 TODO
 1. Front end vs back end
 1. Time schedule
+1. CSS curriculum 
+1. JavaScript curriculum
