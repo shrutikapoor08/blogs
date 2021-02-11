@@ -25,9 +25,22 @@ In this article, I will dive into the resources, a proposed schedule of getting 
     - computer
     - internet connection
     - code editor
+        - Sublime Text
+        - Atom
+        - Visual Studio
+        - Webstorm
+        - Brackets
+    - web browser
+        - Google Chrome
+        - Mozilla Firefox
+        - Safari
+        - Edge
 2. Finances:
+
 3. Time commitment:
-    - 2 - 4 hours / week
+    - As much as you want 
+    - Recommended: 2 - 4 hours / week
+   
 4. Self care:
     - Affirmations
     - Break day 
@@ -56,7 +69,7 @@ In this article, I will dive into the resources, a proposed schedule of getting 
     - https://fullstackopen.com/
     - [JavaScript 30 by Wes Bos](https://javascript30.com/)
     - Youtube channels 
-        - 
+        - https://www.youtube.com/watch/yfoY53QXEnI
 2. In-person resources:
 3. Books:
 4. Local Meetups:
@@ -125,6 +138,54 @@ In this article, I will dive into the resources, a proposed schedule of getting 
 
 
 2. CSS
+    - Adding a CSS stylesheet to an HTML page
+    - CSS Selectors
+    - Color
+        - using hex eg: `#ff0000`
+        - rgb eg: `rgb(0,0,255)`
+        - common color names eg: `red, pink, brown`
+    - Font
+        - Family
+        - Size
+        - Weight
+    - Text
+        - Decoration
+        - Transform
+    - Line-height
+    - Letter-spacing
+    - Word-spacing
+    - Background-color
+    - Margin
+    - Padding
+    - Border
+    - Width
+    - Height
+    - percentage, pixel, em
+    - Box model
+    - List
+        - style
+        - style-image
+    - Pseudo class
+        - hover
+        - active
+        - visited
+    - Position
+        - relative
+        - absolute
+    - Display
+        - block
+        - none
+    - [type="text"] 
+    - class vs id
+    
+    
+Step up CSS 
+    - animations
+    - flexbox
+    - grid
+
+
+
 3. JavaScript
 
 
