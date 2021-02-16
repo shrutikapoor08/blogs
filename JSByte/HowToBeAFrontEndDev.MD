@@ -187,8 +187,90 @@ Step up CSS
 
 
 3. JavaScript
-
-
+ **Fundamentals**
+    - Adding JavaScript file to an HTML page using `<script>`
+    - `alert`
+    - `console.log`
+    - Comments
+    - Variables - `var`, `let`, `const`
+    - Data types - String, Boolean, Number, null, undefined
+    - `typeof` operator
+    - String functions 
+          - concatenation
+          - template strings
+          - `.length`
+          - `.toUpperCase, .toLowerCase`
+          - `subString`
+          - `split`, 
+    - Operators 
+            - `+, - , /, *,`,
+            - `++, --` 
+            - `=`
+            - `<, >, <=, >=, ==, ===, &&, ||`
+            - Ternary operators - ` ? , : `
+    - Loops
+        - `for` 
+        - `while`
+    - Conditionals
+        - `if... else`
+        - `switch`
+    - Data structures: Array
+        - Accessing elements
+        - Looping through elements
+            - `map`
+            - `forEach`
+        - `splice`
+        - `slice`
+        - `filter`
+        - `push`, `pop`
+        - `shift`, `unshift`
+        - `isArray`
+        - `indexOf`
+   - Data structures: Object 
+        - Accessing properties
+        - object destructuring
+        - Looping through elements
+            - `for... of`
+            - `forEach`
+         - `.entries`, `.keys`
+         - `.create` 
+         - `.hasOwnProperty` 
+   - JSON objects
+        - `JSON.stringify`
+   - Functions 
+        - Named functions
+        - Anonymous functions
+        - Arrow functions `() => { }`
+        - IIFE - Immediately Invoked Function Expressions 
+    - `this`
+    - Constructor functions
+        - Instantiating a new object
+        - Accessing properties and methods
+    - Prototypes
+        - Inheriting properties
+        - Extending properties
+        - Accessing properties and methods
+    - ES6 Classes
+        - `constructor()`
+    - `setTimeout`
+    
+ ** Web page and JavaScript **
+ - `document.getElementById`
+ - `document.getElementsByTagName`
+ - `document.getElementsByClassName`
+ - `document.querySelector`
+ - `document.querySelectorAll`
+ - `.createElement`
+ - `.innerHTML`, `.innerText`
+ - `.append()`, `.remove()`
+ - `.appendChild`
+ - `.style`
+ - `events`
+    - `.addEventListener`, `.removeEventListener`
+    - `event.preventDefault`
+ 
+ ## Web fundamentals
+ 
 ## Picking a stack (Front end vs back end)
 
 Depending on your interest and passion, you may want to focus on front end development or back end development. Front end development is the development of user interfaces, and uses technologies like HTML, CSS, JavaScript.
@@ -201,5 +283,6 @@ Back end development is the development of software that facilitates user interf
 TODO
 1. Front end vs back end
 1. Time schedule
-1. CSS curriculum 
-1. JavaScript curriculum
+1. ~CSS curriculum~ 
+1. ~JavaScript curriculum~
+1. Suggested projects
