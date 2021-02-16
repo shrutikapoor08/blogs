@@ -35,9 +35,7 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
       - name: Markdown to HTML
-  # You may pin to the exact commit or the version.
-  # uses: lifepal/markdown-to-html@253bbd85fbdeafe2d1f18c1b9289be24e5cf8f8f
-  uses: lifepal/markdown-to-html@v1.2
-  with:
-    # Markdown text
-    text: # default is 
+        uses: lifepal/markdown-to-html@v1.2
+        with:
+          # Markdown text
+          text: ../../*
