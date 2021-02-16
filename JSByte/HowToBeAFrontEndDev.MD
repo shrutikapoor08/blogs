@@ -281,8 +281,12 @@ Back end development is the development of software that facilitates user interf
 ---
 
 TODO
-1. Front end vs back end
-1. Time schedule
 1. ~CSS curriculum~ 
 1. ~JavaScript curriculum~
+1. Web fundamentals
+1. Step up JavaScript
+1. Backend
 1. Suggested projects
+1. Job hunting tips
+1. Front end vs back end
+1. Time schedule
