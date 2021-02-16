@@ -65,12 +65,12 @@ In this article, I will dive into the resources, a proposed schedule of getting 
 ### Free Resources
 
 1. Online resources:
-    - https://www.freecodecamp.org/
     - https://fullstackopen.com/
     - [JavaScript 30 by Wes Bos](https://javascript30.com/)
     - Youtube channels 
         - https://www.youtube.com/watch/yfoY53QXEnI
-2. In-person resources:
+2. Bootcamps
+    - [Freecodecamp](https://www.freecodecamp.org/)
 3. Books:
 4. Local Meetups:
     - Women Who Code https://www.meetup.com/Women-Who-Code-SF
@@ -91,6 +91,10 @@ In this article, I will dive into the resources, a proposed schedule of getting 
     - https://www.udemy.com/
     - https://egghead.io/
 2. In-person resources:
+    - Bootcamps
+        - [Flatiron school - $16,900 (15 weeks program)](https://flatironschool.com/career-courses/coding-bootcamp)
+        - [App Academy - $17,000 (16 weeks program)](https://www.appacademy.io/course/software-engineer-in-person)
+        - [Hack Reactor - $17,980 (12 weeks program)](https://www.hackreactor.com/coding-bootcamp)
 3. Books:
     - Eloquent JavaScript, Marijn Haverbeke
 
@@ -268,13 +272,46 @@ Step up CSS
  - `events`
     - `.addEventListener`, `.removeEventListener`
     - `event.preventDefault`
+
  
  ## Web fundamentals
+ 1. How do web browsers work?
+ 1. HTTP basics
+    - headers
+    - request 
+    - response
+1. What is an API?
+
+ 
+ ## Step up JavaScript ** 
+ - Promises
+ - Callbacks
+ - AJAX 
+ - Making API calls using `fetch`, `axios`
+ - async / await
+ - Closures
+ 
+ 
+ 
+
  
 ## Picking a stack (Front end vs back end)
 
 Depending on your interest and passion, you may want to focus on front end development or back end development. Front end development is the development of user interfaces, and uses technologies like HTML, CSS, JavaScript.
-Back end development is the development of software that facilitates user interface such as building APIs and uses back end technolgoies such as NodeJS.
+Back end development is the development of software that facilitates user interface such as building APIs and uses back end technologies such as NodeJS.
+
+## Tips for job hunting 
+1. Network
+    - on LinkedIn
+    - on Twitter
+    - in meetups
+1. Present your portfolio with your job application.
+1. Apply to jobs you are not 100% qualified for.
+1. Tailor resume for every job posting. 
+Resources - 
+1. InterviewCake
+1. Pramp.com
+3. Leetcode
 
 ## Word of advice from developers transitioned from a different industry
 
