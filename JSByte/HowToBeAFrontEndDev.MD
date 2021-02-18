@@ -118,23 +118,22 @@ In this article, I will dive into the resources, a proposed plan of getting star
 3. Books:
    - Eloquent JavaScript, Marijn Haverbeke
 
-## Bootcamp Process:
+## Bootcamp Syllabus and process: 
 
-1. Learn the fundamentals: Web development is based on following three elements - HTML, CSS and JavaScript.
-1. Set up your portfolio on GitHub <101 on git> <examples of portfolio>
-1. Practice building with basics. Add this to your portfolio.
-1. Step up challenge - learn a framework.
-1. Implement the framework. - build an inspiration. Add this to your portfolio.
-1. Learn a library for the framework.
-1. Implement your next inspiration idea using the library. Add to your portfolio.
-1. Learn a testing framework : Build test coverage. Add to your portfolio.
-1. Get a freelance job using your portfolio.
-1. Find a mentor. Get feedback on your skills and portfolio.
-1. Step up challenge - learn the other side of stack(front-end vs back-end)
-1. Apply for a full time job. You are ready.
-1. Continue iterating.
-
-
+1. Learn the fundamentals: 
+   1. Web development is based on following three elements - HTML, CSS and JavaScript.
+2. Set up your portfolio on GitHub <101 on git> <examples of portfolio> 
+3. Practice building with basics. Add this to your portfolio.
+4. Step up challenge - learn a framework.
+5. Implement the framework. - build an inspiration. Add this to your portfolio.
+6. Learn a library for the framework.
+7. Implement your next inspiration idea using the library. Add to your portfolio.
+8. Learn a testing framework : Build test coverage. Add to your portfolio.
+9.  Get a freelance job using your portfolio. 
+10. Find a mentor. Get feedback on your skills and portfolio.
+11. Step up challenge - learn the other side of stack(front-end vs back-end)
+12. Apply for a full time job. You are ready.
+13. Continue iterating. 
 
 ## Bootcamp curriculum:
 
