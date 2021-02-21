@@ -1,12 +1,17 @@
 # Bootcamp: Becoming a web developer in 2021 and getting a job as a web developer.
 
-I have been a web developer for over 7 years now. I worked the first two years as a freelance developer, then as co-founder and CTO of my web development startup - World Web Warriors, and then accepted a job as a professional web developer at TELUS Communications in Vancouver, Canada for three years. In 2017, I moved to sunny California and started working as a Software Engineer at PIX Systems, San Francisco. Most recently, I have been working at PayPal Inc for the last three years. These 7 years have been really rewarding. Of all these years, my favourite moments have been the ones in which I was totally freaked out by the sheer size of technical problem at hand. It is because after I was done with these problems, these were the challenges that gave me a huge sense of achievement - not only in my technical abilities, but also in my personal abilities to persevere. It was in these moments I realized the great joy of overcoming your deepest fears and treading deep waters.
+
+## Who am I? What is my story 
+I have been a web developer for over 7 years now. I worked the first two years as a freelance developer, then as co-founder and CTO of my web development startup - World Web Warriors, and then accepted a job as a professional web developer at TELUS Communications in Vancouver, Canada for three years. In 2017, I moved to sunny California, USA and started working as a Software Engineer at PIX Systems, San Francisco. Most recently, I have been working at PayPal Inc for the last three years. These 7 years have been really rewarding. In all of these years, I still vividly remember the moments when I was totally freaked out by the sheer ambiguity of technical problem I had at hand and having no idea of where to start.
+
+
+It is because after I was done with these problems, these were the challenges that made me question my decision of becoming a software engineer - whether I was good enough, but it was exactly these moments that gave me a huge sense of achievement after I had overcome the task - not only because I developed my technical abilities through these problems, but it helped me believe in my ability to persevere. It was in these moments I realized the great joy of overcoming your deepest fears and treading deep waters.
 
 I know that a lot of you want or know someone who wants to start learning web development or coding in general. Perhaps you are too afraid to take this bold move, perhaps you think that coding is hard and not sure if you are the right fit. Maybe you are too scared to open the code editor and start coding because you are afraid you may get stuck and lose motivation, or you don't know where to get started in the vast sea of knowledge. I am here to tell you - You got this! We will get through this together!
 
 In this article, I will dive into the resources, a proposed plan of getting started, and a list of resources to help you learn to become a web developer. This plan is going to be focused on getting you a job, and therefore project-heavy.
 
-## Debunking some myths:
+## Debunking some myths that may be holding you back:
 
 1. You do not need an expensive laptop or setup.
 1. You do not need to spend tons of money to get started.
@@ -14,67 +19,71 @@ In this article, I will dive into the resources, a proposed plan of getting star
 1. You do not need to be a certain years old to get started.
 1. You do not need to know all the technologies before applying for a job.
 
-## Some affirmations that will help you through this journey:
 
-1. You are already smart enough to be a web developer.
-1. Your creative power will help you succeed in this journey.
 
-## Getting started:  things you need
+## What we will learn
+
+1. Basics of how websites work, git
+1. Fundamentals of web - HTML, CSS, JavaScript.
+1. Front end frameworks and libraries - React, SASS.
+1. Back end libraries - NodeJS, Express, MongoDB.
+1. Building a portfolio of web development for applying to jobs.
+
+## Getting started: things you need
 
 1. Equipment:
    - computer
    - internet connection
-   - code editor
+   - code editor. Some options are:
      - Sublime Text
      - Atom
      - Visual Studio
      - Webstorm
      - Brackets
-   - web browser
-     - Google Chrome
+   - web browser. Some options are:
+        - Google Chrome
      - Mozilla Firefox
      - Safari
      - Edge
+
 2. Finances:
-    - both free and paid options available
+   - both free and paid options available
     
-
-3. Time commitment:
-
+3) Time commitment:
    - As much or as little as you want
    - Recommended: 2 - 4 hours / week
 
-4. Self care:
+4) Self-care:
+   - Write down your list of affirmations. ## Some affirmations that will help you through this journey:
+    1. You are already smart enough to be a web developer.
+    1. You are capable of amazing things.
+    1. You can make things happen.
+    1. You can do anything you set your mind to.
+    1. You are competent.
+    1. Your creative power will help you succeed in this journey. 
+   
+    - Break day: Give yourself at least one day a week to rest and recharge. On my break days, I try to limit my screen time, including laptop, phone and TV. Break days are my days to "nurture myself". I will paint, go on a hike, do something creative, create a DIY project, hang out with friends. 
+    
+    - List of accomplishments: As you progress through this journey, keep a written list of things you have accomplished. Items on this list could be as small as completing a chapter on time, or solving a hard coding problem. Everything counts! This list is a proof that you are growing! 
+    
+5) Inspiration sources:
+   - List of people who inspire you mentors. <tips on finding a mentor>
+   - Write down what about these people are you inspired by.
+   - Reach out to a few of these people to let them know of the journey you are embarking on, and see if they would be willing to help out. Most people are happy to offer any help and support they can.
 
-   - Affirmations
-   - Break day
-   - "self care ritual" <EXPAND>
-
-5. List of people who inspire you:
-
-   - mentor
-   - people in the industry
-   - people in your current workplace
-
-6. Support group:
-
-   - your group of friends who make you feel like you can achieve amazing things
-   - other new developers in the industry. you can find people with similar interest on the same journey as you by going to local meetups in your area. [Here is an example of a local meetup in Bay area](https://www.meetup.com/Free-Code-Camp-SF/events/276180196) that welcomes newcomers and provides a space for people to learn and grow with each other.
-
-7. List of "cool project ideas": These will be your inspirations for building cool things. We will be using this list of ideas to build projects. These could be anything you want to build regardless of how crazy it sounds. Some examples are:
-   - Music player app
-   - Pomodoro timer
-   - random joke generator
+7) List of "cool project ideas": These will be your inspirations for building cool things. The idea can be anything - an app you wanted to build, an improvement you wanted to see, a funny meme bot you wanted to generate. We will be using this list of ideas to build projects. Some examples are:
+    - dog image generator
+    - Music player app
+    - Pomodoro timer
+    - random joke generator
+    - a bot to calculate time on Mars
 
 
-## What we will learn
+6) Support group:
+   - reach out to your group of friends who make you feel like you can achieve amazing things and let them know of the journey you are embarking on. These people will give you the much needed moral support. 
+   - other new developers in the industry. you can find people with similar interest on the same journey as you by going to local meetups in your area (https://www.meetup.com/Free-Code-Camp-SF/events/276180196), on discord servers or facebook groups. 
 
-1. HTML
-1. CSS
-1. JavaScript
-1. Front end - React, SASS
-1. Back end - NodeJS, Express, MongoDB
-1. Build a project
+
 
 
 ## Resources: Where to study
@@ -85,55 +94,83 @@ In this article, I will dive into the resources, a proposed plan of getting star
    - https://fullstackopen.com/
    - [JavaScript 30 by Wes Bos](https://javascript30.com/)
    - Youtube channels
-     - https://www.youtube.com/watch/yfoY53QXEnI
-     
+    - [LevelUpTuts](https://www.youtube.com/user/LevelUpTuts)
+    - [Traversy Media](https://www.youtube.com/user/TechGuyWeb)
+    >TODO: https://dev.to/lanrewaju/20-youtube-channels-to-follow-for-web-developers-35h3 
+      
 2. Bootcamps
    - [Freecodecamp](https://www.freecodecamp.org/)
+   - [Codeacademy](https://www.codecademy.com/)
+   - [Udacity](https://www.udacity.com/course/front-end-web-developer-nanodegree--nd0011)
+    -[Coursera](https://www.coursera.org/learn/html-css-javascript-for-web-developers#syllabus)
 
 3. Books:
+    - [Front-End Developer Handbook](https://frontendmasters.com/books/front-end-handbook/2018/)
    - [MDN](https://developer.mozilla.org/en-US/docs/Learn) (Web Docs, but MDN is web development bible)
 
 4. Local Meetups:
-   - Women Who Code https://www.meetup.com/Women-Who-Code-SF
-   - Modern Web: https://www.meetup.com/modernweb
-
+   - [Women Who Code](https://www.meetup.com/Women-Who-Code-SF)
+   - [Modern Web](https://www.meetup.com/modernweb)
+>TODO
+     
 5. Podcasts
-   - Front end happy hour: https://frontendhappyhour.com/
-   - SyntaxFM : https://syntax.fm/
-   - JavaScript Jabber: https://devchat.tv/podcasts/js-jabber/
-   - Developer Tea : https://spec.fm/podcasts/developer-tea
-   - Toolsday - https://spec.fm/podcasts/toolsday
+   - [Front end happy hour](https://frontendhappyhour.com/
+   - [SyntaxFM](https://syntax.fm/)
+   - [JavaScript Jabber](https://devchat.tv/podcasts/js-jabber/)
+   - [Developer Tea](https://spec.fm/podcasts/developer-tea)
+   - [Toolsday](https://spec.fm/podcasts/toolsday)
 
 **Paid Resources**
 
 1. Online resources:
-   - https://frontendmasters.com/
-   - https://www.udemy.com/
-   - https://egghead.io/
+   - [Frontend Masters](https://frontendmasters.com/learn/beginner/)
+   - [Udemy](https://www.udemy.com/)
+   - [Lynda](https://www.lynda.com/Web-training-tutorials/88-0.html) 
+   - [EggHead](https://egghead.io/)
+
 2. In-person resources:
    - Bootcamps
-     - [Flatiron school - \$16,900 (15 weeks program)](https://flatironschool.com/career-courses/coding-bootcamp)
-     - [App Academy - \$17,000 (16 weeks program)](https://www.appacademy.io/course/software-engineer-in-person)
-     - [Hack Reactor - \$17,980 (12 weeks program)](https://www.hackreactor.com/coding-bootcamp)
+     - [Flatiron school - $16,900 (15 weeks program)](https://flatironschool.com/career-courses/coding-bootcamp)
+     - [App Academy - $17,000 (16 weeks program)](https://www.appacademy.io/course/software-engineer-in-person)
+     - [Hack Reactor - $17,980 (12 weeks program)](https://www.hackreactor.com/coding-bootcamp)
+
 3. Books:
    - Eloquent JavaScript, Marijn Haverbeke
+>TODO
 
-## Bootcamp Syllabus and process: 
+## Bootcamp Syllabus and process:
 
-1. Learn the fundamentals: 
-   1. Web development is based on following three elements - HTML, CSS and JavaScript.
-2. Set up your portfolio on GitHub <101 on git> <examples of portfolio> 
-3. Practice building with basics. Add this to your portfolio.
+1. Learn the fundamentals:
+    1. HTML 
+    1. CSS
+    1. JavaScript.
+1. PROJECT: Build a portfolio site using only the fundamentals. 
+    -> Add functionality: 
+        1. Add your name, photo, bio using semantic HTML
+        1. Setup sections for projects. 
+
+2. Learn git and version control.
+
+3. PROJECT: 
+   1. Add your portfolio to git
+   2. Step Up Assignment: Setup Github pages to host your portfolio
+ 
+4. Step up your JS and CSS knowledge
+   
+5. PROJECT: Make your portfolio responsive.
+4. PROJECT: Getting ready for job interviews
+    1. 
 4. Step up challenge - learn a framework.
 5. Implement the framework. - build an inspiration. Add this to your portfolio.
 6. Learn a library for the framework.
 7. Implement your next inspiration idea using the library. Add to your portfolio.
 8. Learn a testing framework : Build test coverage. Add to your portfolio.
-9.  Get a freelance job using your portfolio. 
+9. Get a freelance job using your portfolio.
 10. Find a mentor. Get feedback on your skills and portfolio.
 11. Step up challenge - learn the other side of stack(front-end vs back-end)
 12. Apply for a full time job. You are ready.
-13. Continue iterating. 
+13. Continue iterating.
+14. Prepare for interviews
 
 ## Bootcamp curriculum:
 
@@ -147,7 +184,7 @@ In this article, I will dive into the resources, a proposed plan of getting star
   - Lists `<li>, <ul>`
   - Links `<a>`
   - Images `<img>`
-  - Semantic sections `<article>, <main>, <navigation>`
+  - Semantic HTML `<article>, <main>, <navigation>`
   - Tables `<table>`
 - HTML Formatting
   - <b> - Bold text
@@ -205,7 +242,11 @@ In this article, I will dive into the resources, a proposed plan of getting star
    - [type="text"]
    - class vs id
 
-**Step up CSS** - animations - flexbox - grid
+**Step up CSS** 
+    1. animations
+    2. flexbox
+    3. grid
+    4. responsive sites
 
 3. JavaScript
    **Fundamentals**
@@ -284,22 +325,26 @@ In this article, I will dive into the resources, a proposed plan of getting star
 
 - Promises
 - Callbacks
+- async / await
 - AJAX
 - Making API calls using `fetch`, `axios`
-- async / await
+- Event loop
 - Closures
+- Service Workers
 
 ## Web fundamentals
 
-1.  [How do the web work?](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/How_does_the_Internet_work)
+1.  [How does the web work?](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/How_does_the_Internet_work)
 1.  HTTP basics
     - headers
     - request
     - response
 1.  What is an API?
-1. What is server side vs client side?
-1. What is a domain name? -> DNS lookup
-1. What is DNS look
+1.  What is server side vs client side?
+1.  What is a domain name?
+1.  What is DNS lookup?
+1.  What is web hosting? 
+1. CRUD operations
 
 ## Step up: Pick a stack (Front end vs back end)
 
@@ -308,6 +353,9 @@ Back end development is the development of software that facilitates user interf
 
 ## Front end framework.
 
+
+
+## Practicing for interviews
 ## Tips for job hunting
 
 1. Network
@@ -341,3 +389,9 @@ TODO
 1. Job hunting tips
 1. Front end vs back end
 1. Time schedule
+1. Insert links to section headers
+
+
+Resources: 
+https://medium.com/swlh/10-best-channels-to-learn-web-development-babcac9102c5
+https://dev.to/chaoocharles/a-complete-portfolio-tutorial-using-pure-html-css-and-javascript-1l2l
