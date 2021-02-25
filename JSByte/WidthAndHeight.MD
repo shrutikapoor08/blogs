@@ -16,4 +16,4 @@
 
 `getBoundingClientRect`: A function to get the most precise position of an element on the screen. It returns an object with properties indicating the pixel positions of the sides of the element relative to the top left of the screen. Word of caution - calling getBoundingClientRect causes reflow. [More details here ] (https://gist.github.com/paulirish/5d52fb081b3570c81e3a)
 
-{% jsfiddle https://jsfiddle.net/af9sdt0h/21/ %}
+JSFiddle link: https://jsfiddle.net/af9sdt0h/21/ 
