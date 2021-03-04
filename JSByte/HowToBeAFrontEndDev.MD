@@ -203,6 +203,7 @@ In this article, I will dive into the resources, a proposed plan of getting star
 - HTML form elements
 
 **Step up HTML**
+> TODO
 
 2. CSS
 
@@ -336,29 +337,42 @@ In this article, I will dive into the resources, a proposed plan of getting star
 - Event loop
 - Closures
 - Service Workers
+- [Browser events](https://github.com/shrutikapoor08/blogs/blob/master/JSByte/HowToHandleEvents.MD)
+- Forms
+    - Form properties and methods
+    - Form events: focus, blur, submit
+    - [Form validation](https://github.com/shrutikapoor08/blogs/blob/master/JSByte/FormValidation.MD)
 
 ## Web fundamentals
 
 1.  [How does the web work?](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/How_does_the_Internet_work)
-1.  HTTP basics
+1.  [HTTP basics](https://www.youtube.com/watch?v=t3xrHaqX2tc&ab_channel=OracleDevelopers)
     - headers
     - request
     - response
+    - verbs: PUT, POST, DELETE, PATCH, POST
 1.  What is an API?
-1.  What is server side vs client side?
+        1. What is REST API? 
+        2. What is GraphQL API? 
+1. CRUD operations
+1. What are cookies? 
+        1. Getting and setting cookies
+1. What is session storage?
+1. How does a web browser work? 
+1.  What is server vs client?
 1.  What is a domain name?
 1.  What is DNS lookup?
 1.  What is web hosting?
-1.  CRUD operations
+1. Browser Dev tools
+1. CORS and how to get past CORS?
 
 ## Step up: Pick a stack (Front end vs back end)
 
-Depending on your interest and passion, you may want to focus on front end development or back end development. Front end development is the development of user interfaces, and uses technologies like HTML, CSS, JavaScript. When foccussing on front end development, you may want to focus on frameworks and libraries such as React, Redux, SASS. In 2021, a good set of libraries to learn is React, SASS <>
+Depending on your interest and passion, you may want to focus on front end development or back end development. Front end development is the development of user interfaces, and uses technologies like HTML, CSS, JavaScript. When foccussing on front end development, you may want to focus on frameworks and libraries such as React, Redux, SASS. In 2021, a good set of libraries to learn is React, SASS <TODO>
 Back end development is the development of software that facilitates user interface such as building APIs and uses back end technologies such as NodeJS. For back-end development, you may want to focus on databases such as MongoDB and frameworks and libraries such as NodeJS, Express. In 2021, a good set of libraries to learn is <>
 
 ## Front end framework.
 
-## Practicing for interviews
 
 ## Tips for job hunting
 
@@ -368,11 +382,11 @@ Back end development is the development of software that facilitates user interf
    - in meetups
 1. Present your portfolio with your job application.
 1. Apply to jobs you are not 100% qualified for.
-1. Tailor resume for every job posting.
-   Resources -
-1. InterviewCake
-1. Pramp.com
-1. Leetcode
+1. Tailor resume for every job posting. 
+1. Resources -
+    1. InterviewCake
+    1. Pramp.com
+    1. Leetcode
 
 ## Word of advice from developers transitioned from a different industry
 
@@ -388,18 +402,18 @@ https://dev.to/lanrewaju/20-youtube-channels-to-follow-for-web-developers-35h3
 
 1. ~CSS curriculum~
 1. ~JavaScript curriculum~
-1. Web fundamentals
-1. Step up JavaScript
-1. Step up CSS
-1. Step up HTML
+1. ~Web fundamentals~
+1. ~Step up JavaScript~
+1. ~Suggested resources~
 1. Frontend
 1. Backend
-1. Suggested resources
 1. Suggested projects
 1. Job hunting tips
 1. Front end vs back end
-1. Time schedule
+1. Timeline 
 1. Insert links to section headers
+1. Step up CSS
+1. Step up HTML
 
 #### Appendix
 
