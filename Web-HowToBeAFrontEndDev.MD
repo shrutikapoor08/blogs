@@ -161,12 +161,27 @@ In this article, I will dive into the resources, a proposed plan of getting star
 
 4) Step up your JS and CSS knowledge
 
-5) PROJECT: Make your portfolio responsive.
+5) PROJECT: Make your portfolio mobile friendly and responsive.
+   
 6) PROJECT: Getting ready for job interviews
-   1. >TODO
+    1. Practice interview questions on [InterviewCake](https://www.interviewcake.com/). 
+   1. Practice interviews questions on [Leetcode](https://leetcode.com/). Start with easy and slowly work your way up.
+    
 7) Step up challenge - learn a front-end framework.
-8) Implement the framework. - build an inspiration. Add this to your portfolio.
-9) Learn a library for the framework (Redux / SASS)
+   React, Vue and Angular are the top front-end frameworks in 2021. If you were to pick one, I would recommend [React](https://reactjs.org/). Lots of companies use React in production. 
+   
+
+8) PROJECT: Implement the framework. - build an inspiration. Add this to your portfolio. Tasks: 
+    1. Fetch an API of your choice. 
+    2. Render data in your app. 
+    3. Implement search functionality.
+    4. Implement auto-complete functionality.
+   
+9) Step up challenge: Learn a library for the framework.
+   1. Learn a state management library: Redux / React context
+    > TODO
+    1. Learn a CSS library - SASS 
+
 10) Implement your next inspiration idea using the library. Add to your portfolio.
 11) Learn a testing framework : Build test coverage. Add to your portfolio.
 12) Get a freelance job using your portfolio.
@@ -299,7 +314,7 @@ In this article, I will dive into the resources, a proposed plan of getting star
      - Anonymous functions
      - Arrow functions `() => { }`
      - IIFE - Immediately Invoked Function Expressions
-   - `this`
+   - `this` keyword
    - Constructor functions
      - Instantiating a new object
      - Accessing properties and methods
@@ -329,6 +344,10 @@ In this article, I will dive into the resources, a proposed plan of getting star
 
 ** Step up JavaScript **
 
+- bind, call, apply
+- Scopes
+- Hoisting
+- Event bubbling
 - Promises
 - Callbacks
 - async / await
