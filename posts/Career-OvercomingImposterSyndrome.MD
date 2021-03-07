@@ -2,6 +2,10 @@
 Imposter syndrome is the feeling that you don't belong here. It is the feeling of being amongst an incredibly smart group of people and feeling you don't deserve a seat at the table, that it was a mistake you ended up here, that your success is a fluke. 
 If you have been feeling like this, you are not alone. [70% of the population](https://so06.tci-thaijo.org/index.php/IJBS/article/view/521) feels the imposter phenomenon - feeling of anxiety, fear of failure and dissatisfaction with life. 
 
+---
+layout: post
+title: Dealing with imposter syndrome
+---
 
 # Dealing with imposter syndrome.
 Dealing with imposter syndrome can become manageable with a little patience, self-understanding and self-love. Here are some tips that have helped me manage my imposter syndrome - 
