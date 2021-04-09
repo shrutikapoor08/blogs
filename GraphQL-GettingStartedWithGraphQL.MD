@@ -2,6 +2,8 @@
 
 
 ## What is GraphQL? 
+In its most basic sense, GraphQL is a way of asking for data. Technically, it is a specification and any language has the freedom to implement a GraphQL API. In JavaScript for eg, the module `graphql-js` is used to create GraphQL APIs.
+
 GraphQL is essentially a query language for your API. It is a way of asking for data from API. It offers a flexible way of asking for data, and you can get as much or as little data as you need. 
 
 A typical GraphQL implementation involves GraphQL on the server side (GraphQL API) and GraphQL on the client side (to talk to GraphQL APIs). A lot of different tools can be used to build a full-stack GraphQL application - such as Prisma, Apollo, Express, Hasura.
@@ -37,3 +39,12 @@ REST does certain things better -
 5.  Build a GraphQL server - https://egghead.io/courses/build-a-graphql-server
 6.  Use GraphQL on the client - https://egghead.io/courses/graphql-data-in-react-with-apollo-client
 7.  Read a book - https://www.amazon.com/Learning-GraphQL-Declarative-Fetching-Modern/dp/1492030716
+
+
+- GraphQL -
+2. What is GraphQL
+3. How to get started
+4. What are different tools/frameworks available
+5. What are the advantages
+6. What are the drawbacks
+7. Decisions to consider before going for GraphQL

@@ -22,4 +22,11 @@ In this method, existing REST APIs are used in conjunction with GraphQL APIs. A 
 
 -- 
 On a personal note ...
-Last week I gave a talk at CityJS conference, and talked in detail about adoption of GraphQL in an enterprise and how to begin introducing GraphQL in a REST microservices architecture. If you are interested, the talk will be published here: 
+Last week I gave a talk at CityJS conference, and talked in detail about adoption of GraphQL in an enterprise and how to begin introducing GraphQL in a REST microservices architecture. If you are interested, [the slides are published here](https://github.com/shrutikapoor08/talks/blob/master/Getting%20started%20with%20GraphQL/Getting%20started%20with%20graphql.pdf) 
+
+
+Peace! ✌🏼
+
+Shruti Kapoor
+Follow on Twitter
+Hang out on Twitch
