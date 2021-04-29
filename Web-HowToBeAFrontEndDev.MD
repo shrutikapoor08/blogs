@@ -1,5 +1,3 @@
-# Bootcamp: Becoming a front end web developer in 2021 and getting a job as a web developer.
-
 I know that a lot of people want or know someone who wants to start learning web development or coding in general. Perhaps you are too afraid to take this bold move, perhaps you think that coding is hard and not sure if you are the right fit. Maybe you are too scared to open the code editor and start coding because you are afraid you may get stuck and lose motivation, or you don't know where to get started in the vast sea of knowledge. I am here to tell you - You got this! We will get through this together!
 
 In this article, I will dive into the resources, a proposed plan of getting started, and a list of resources to help you learn to become a web developer. This plan is going to be focused on getting you a job, and therefore project-heavy.
@@ -12,71 +10,70 @@ In this article, I will dive into the resources, a proposed plan of getting star
 1. You do not need to be a certain years old to get started.
 1. You do not need to know all the technologies before applying for a job.
 
-## What we will learn
 
-1. Basics of how web works, git, code editors
-1. Fundamentals of web development- HTML, CSS, JavaScript.
-1. Front end frameworks and libraries - React, SASS.
-1. Develop a web app
+---
 
 ## Getting started: things you need
 
 1. Equipment:
 
-   - computer
-   - internet connection
-   - code editor. Some options are:
-     - Sublime Text
-     - Atom
-     - Visual Studio
-     - Webstorm
-     - Brackets
-   - web browser. Some options are:
-     - Google Chrome
-     - Mozilla Firefox
-     - Safari
-     - Edge
+    - computer
+    - internet connection
+    - code editor. Some options are:
+        - Sublime Text
+        - Atom
+        - Visual Studio
+        - Webstorm
+        - Brackets
+    - web browser. Some options are:
+        - Google Chrome
+        - Mozilla Firefox
+        - Safari
+        - Edge
 
 2. Finances:
-   - both free and paid options available
+    - both free and paid options available
 
-3) Time commitment:
+3. Time commitment:
 
-   - As much or as little as you want
-   - Recommended: 2 - 4 hours / week
+    - As much or as little as you want
+    - Recommended: 2 - 4 hours / week
 
-4) Self-care:
+4. Self-care:
 
-   - Write down your list of affirmations. ## Some affirmations that will help you through this journey:
+    - Write down your list of affirmations. ## Some affirmations that will help you through this journey:
 
-     - You are already smart enough to be a web developer.
-     - You are capable of amazing things.
-     - You can make things happen.
-     - You can do anything you set your mind to.
-     - You are competent.
-     - Your creative power will help you succeed in this journey.
+        - You are already smart enough to be a web developer.
+        - You are capable of amazing things.
+        - You can make things happen.
+        - You can do anything you set your mind to.
+        - You are competent.
+        - Your creative power will help you succeed in this journey.
 
-   - Break day: Give yourself at least one day a week to rest and recharge. I love break days! These are my days to "nurture myself" and have "me time". I usually paint, go on a hike, do something creative, create a DIY project, hang out with friends, nap, sleep in, watch F.R.I.E.N.D.S, drink chai all day long or watch a cute feel-good movie.
+    - Break day: Give yourself at least one day a week to rest and recharge. I love break days! These are my days to "nurture myself" and have "me time". I usually paint, go on a hike, do something creative, create a DIY project, hang out with friends, nap, sleep in, watch F.R.I.E.N.D.S, drink chai all day long or watch a cute feel-good movie.
 
-5) List of accomplishments: As you progress through this journey, keep a written list of things you have accomplished. Items on this list could be as small as completing a chapter on time, or solving a hard coding problem. Everything counts! This list is a proof that you are growing!
-6) Inspiration sources:
+5. List of accomplishments: As you progress through this journey, keep a written list of things you have accomplished. Items on this list could be as small as completing a chapter on time, or solving a hard coding problem. Everything counts! This list is a proof that you are growing!
 
-   - List of people who inspire you mentors. <tips on finding a mentor>
-   - Write down what about these people are you inspired by.
-   - Reach out to a few of these people to let them know of the journey you are embarking on, and see if they would be willing to help out. Most people are happy to offer any help and support they can.
+6. Inspiration sources:
 
-7) List of "cool project ideas": These will be your inspirations for building cool things. The idea can be anything - an app you always wanted to build, an improvement you wanted to see in an app, a funny meme bot you wanted to generate. We will be using this list of ideas to build projects. Some examples are:
-   - dog image generator
-   - Music player app
-   - Pomodoro timer
-   - random joke generator
-   - cat picture generator
-   - an app to show time in different parts of the world
+    - List of people who inspire you mentors. <tips on finding a mentor>
+    - Write down what about these people are you inspired by.
+    - Reach out to a few of these people to let them know of the journey you are embarking on, and see if they would be willing to help out. Most people are happy to offer any help and support they can.
+
+7. List of "cool project ideas": These will be your inspirations for building cool things. The idea can be anything - an app you always wanted to build, an improvement you wanted to see in an app, a funny meme bot you wanted to generate. We will be using this list of ideas to build projects. Some examples are:
+    - dog image generator
+    - Music player app
+    - Pomodoro timer
+    - random joke generator
+    - cat picture generator
+    - an app to show time in different parts of the world
 
 6. Support group:
-   - reach out to your group of friends who make you feel proud of yourself and let them know of the journey you are embarking on. These people will be your cheerleaders throughout this process.
-   - other new developers in the industry. you can find people with similar interest on the same journey as you by attending [local meetups in your area](https://www.meetup.com/Free-Code-Camp-SF/events/276180196). A popular online version of meetups group is Discord. Check out this list of [Discord servers for developers](https://dev.to/htnguy/top-10-discord-servers-for-developers-559o) joining discord servers or facebook groups.
-   - [100 Days of Code](https://www.100daysofcode.com/) is an amazing community of individuals who are getting started with coding. This is how I kept myself motivated when I was learning to code, applying for jobs and preparing for interviews.
+    - reach out to your group of friends who make you feel proud of yourself and let them know of the journey you are embarking on. These people will be your cheerleaders throughout this process.
+    - other new developers in the industry. you can find people with similar interest on the same journey as you by attending [local meetups in your area](https://www.meetup.com/Free-Code-Camp-SF/events/276180196). A popular online version of meetups group is Discord. Check out this list of [Discord servers for developers](https://dev.to/htnguy/top-10-discord-servers-for-developers-559o) joining discord servers or facebook groups.
+    - [100 Days of Code](https://www.100daysofcode.com/) is an amazing community of individuals who are getting started with coding. This is how I kept myself motivated when I was learning to code, applying for jobs and preparing for interviews.
+
+
 
 ## Resources: Where to study
 
@@ -91,7 +88,7 @@ In this article, I will dive into the resources, a proposed plan of getting star
         - [Programming with Mosh](https://www.youtube.com/watch?v=8JJ101D3knE&ab_channel=ProgrammingwithMosh)
         - [Florin Pop](https://www.youtube.com/channel/UCeU-1X402kT-JlLdAitxSMA)
         - [Ben Awad](https://www.youtube.com/user/99baddawg)
-    -
+
 2. Bootcamps
     - [Freecodecamp](https://www.freecodecamp.org/)
     - [Codeacademy](https://www.codecademy.com/)
@@ -101,7 +98,7 @@ In this article, I will dive into the resources, a proposed plan of getting star
 3. Books
     - [Front-End Developer Handbook](https://frontendmasters.com/books/front-end-handbook/2018/)
     - [MDN](https://developer.mozilla.org/en-US/docs/Learn) (Web Docs, but MDN is like web development bible)
-    -
+
 4. Podcasts
     - [Front end happy hour](https://frontendhappyhour.com/)
     - [SyntaxFM](https://syntax.fm/)
@@ -135,57 +132,60 @@ In this article, I will dive into the resources, a proposed plan of getting star
     - [Eloquent JavaScript, Marijn Haverbeke](https://www.amazon.com/Eloquent-JavaScript-3rd-Introduction-Programming/dp/1593279507)
     - [HTML and CSS: Design and Build Websites](https://www.goodreads.com/book/show/10361330-html-and-css)
 
+---
 
 ## Bootcamp Syllabus and process:
 
-1. Learn the fundamentals from a resource of your choice: 
-   1. HTML
-   1. CSS
-   1. JavaScript.
+1. Learn the fundamentals from a resource of your choice:
+    1. HTML
+    1. CSS
+    1. JavaScript.
 
-1) PROJECT: Build a portfolio web page using the skills you learnt so far - JS, HTML, CSS. The web page should have the following: 
-    1. Add your name, photo, bio using semantic HTML 
-    1. Setup sections for projects. We will fill these projects as we go. The projects will have an image, description and a link. Set these up with [lorem ipsum text](https://loremipsum.io/) for now. 
+1. PROJECT: Build a portfolio web page using the skills you learnt so far - JS, HTML, CSS. The web page should have the following:
+    1. Add your name, photo, bio using semantic HTML
+    1. Setup sections for projects. We will fill these projects as we go. The projects will have an image, description and a link. Set these up with [lorem ipsum text](https://loremipsum.io/) for now.
 
 2. Learn git and version control. [Here's an instructional video](https://youtu.be/8JJ101D3knE)
 
-3) PROJECT:
-   1. Add your portfolio to GitHub.
-   2. Step Up Assignment: Setup Github pages to host your portfolio. [Here's an instructional video](https://www.youtube.com/watch?v=794yrQWAOD8&ab_channel=iEatWebsites)
+3. PROJECT:
+    1. Add your portfolio to GitHub.
+    2. Step Up Assignment: Setup Github pages to host your portfolio. [Here's an instructional video](https://www.youtube.com/watch?v=794yrQWAOD8&ab_channel=iEatWebsites)
 
-4) Step up your JS and CSS knowledge
+4. Step up your JS and CSS knowledge
 
-5) PROJECT: Make your portfolio mobile friendly and responsive.
-   
-6) PROJECT: Getting ready for job interviews
-    1. Practice interview questions on [InterviewCake](https://www.interviewcake.com/). 
-   1. Practice interviews questions on [Leetcode](https://leetcode.com/). Start with easy and slowly work your way up.
-    
-7) Step up challenge - learn a front-end framework.
-   React, Vue and Angular are the top front-end frameworks in 2021. If you were to pick one, I would recommend [React](https://reactjs.org/). Lots of companies use React in production. 
-   
+5. PROJECT: Make your portfolio mobile friendly and responsive.
 
-8) PROJECT: Implement the framework. - build an inspiration. Add this to your portfolio. Tasks: 
-    1. Fetch an API of your choice. 
-    2. Render data in your app. 
+6. PROJECT: Getting ready for job interviews
+    1. Practice interview questions on [InterviewCake](https://www.interviewcake.com/).
+    1. Practice interviews questions on [Leetcode](https://leetcode.com/). Start with easy and slowly work your way up.
+
+7. Step up challenge - learn a front-end framework.
+   React, Vue and Angular are the top front-end frameworks in 2021. If you were to pick one, I would recommend [React](https://reactjs.org/). Lots of companies use React in production.
+
+
+8. PROJECT: Implement the framework. - build an inspiration. Add this to your portfolio. Tasks:
+    1. Fetch an API of your choice.
+    2. Render data in your app.
     3. Implement search functionality.
     4. Implement auto-complete functionality.
-   
-9) Step up challenge: Learn a library for the framework.
-   1. Learn a state management library. [Redux is a good library to learn.](https://redux.js.org/tutorials/essentials/part-1-overview-concepts)
-    1. Learn a CSS library, eg: SASS 
 
-10) Implement your next inspiration idea using the library. Add to your portfolio.
-11) Learn a testing framework: Build test coverage. Add to your portfolio. Eg: [Jest](https://jestjs.io/)
-12) Get a freelance job using your portfolio. Some places to find freelance opportunities are [Upwork](https://www.upwork.com) & [Fiverr](https://www.fiverr.com/)
-13) Find a mentor. Get feedback on your skills and portfolio.
-15) Apply for a job. You are ready.
-17) Prepare for interviews
-16) Continue iterating.
+9. Step up challenge: Learn a library for the framework.
+    1. Learn a state management library. [Redux is a good library to learn.](https://redux.js.org/tutorials/essentials/part-1-overview-concepts)
+    1. Learn a CSS library, eg: SASS
+
+10. Implement your next inspiration idea using the library. Add to your portfolio.
+11. Learn a testing framework: Build test coverage. Add to your portfolio. Eg: [Jest](https://jestjs.io/)
+12. Get a freelance job using your portfolio. Some places to find freelance opportunities are [Upwork](https://www.upwork.com) & [Fiverr](https://www.fiverr.com/)
+13. Find a mentor. Get feedback on your skills and portfolio.
+15. Apply for a job. You are ready.
+17. Prepare for interviews
+16. Continue iterating.
+
+
 
 ## Bootcamp curriculum:
 
-## [HTML](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics)
+## HTML
 - [ ] HTML main tags
     - [ ] `<html>` [Link](https://www.w3docs.com/learn-html/html-html-tag.html)
     - [ ] `<head>` [Link](https://www.w3docs.com/learn-html/html-head-tag.html)
@@ -263,7 +263,7 @@ In this article, I will dive into the resources, a proposed plan of getting star
 - [ ] Height [Article](https://css-tricks.com/almanac/properties/h/height/)
 - [ ] percentage, pixel, em
 - [ ] Box model [Article](https://css-tricks.com/the-css-box-model/)
-  - [ ] list-style [Article](https://css-tricks.com/almanac/properties/l/list-style/)
+    - [ ] list-style [Article](https://css-tricks.com/almanac/properties/l/list-style/)
 - [ ] Pseudo class [Article](https://css-tricks.com/pseudo-class-selectors/)
     - [ ] hover
     - [ ] active
@@ -314,7 +314,7 @@ In this article, I will dive into the resources, a proposed plan of getting star
         - [ ] `++`
         - [ ] `--`
         - [ ] `%`
-    - [ ] Assignment Operators [ Article ](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#assignment_operators)
+    - [ ] Assignment Operators [Article](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#assignment_operators)
         - [ ] `=` [Article](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Assignment)
     - [ ] `<`
     - [ ] `>`
@@ -420,36 +420,40 @@ In this article, I will dive into the resources, a proposed plan of getting star
     - [ ] What is CORS? [Article](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) [Article](https://javascript.info/fetch-crossorigin)
     - [ ] ARIA - What is accessibility? [Article](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/What_is_accessibility) [Video](https://www.youtube.com/watch?v=HtTyRajRuyY&list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g&ab_channel=GoogleChromeDevelopers)
 
+
 ## Step up: Pick a stack (Front end vs back end)
 
-Depending on your interest and passion, you may want to focus on front end development or back end development. Front end development is the development of user interfaces, and uses technologies like HTML, CSS, JavaScript. When focussing on front end development, you may want to focus on frameworks and libraries such as React, Redux, SASS. 
-Back end development is the development of software that facilitates user interface such as building APIs and uses back end technologies such as NodeJS. For back-end development, you may want to focus on databases such as MongoDB and frameworks and libraries such as NodeJS, Express. 
+Depending on your interest and passion, you may want to focus on front end development or back end development. Front end development is the development of user interfaces, and uses technologies like HTML, CSS, JavaScript. When focussing on front end development, you may want to focus on frameworks and libraries such as React, Redux, SASS.
+Back end development is the development of software that facilitates user interface such as building APIs and uses back end technologies such as NodeJS. For back-end development, you may want to focus on databases such as MongoDB and frameworks and libraries such as NodeJS, Express.
 
 To review a full list of step up curriculum, [check out the full web development checklist here](https://github.com/shrutikapoor08/Learn-Web-Development-Checklist/blob/main/README.md#step-up)
+
 
 
 ## Tips for job hunting
 
 1. Use your network
-   - on LinkedIn
-   - on Twitter
-   - in meetups
-   - personal network of friends and family
+    - on LinkedIn
+    - on Twitter
+    - in meetups
+    - friends and family
 1. Present your portfolio with your job applications.
-1. Apply to jobs you are not 100% qualified for. 
-1. Tailor resume for every job posting. 
+1. Apply to jobs you are not 100% qualified for.
+1. Tailor resume for every job posting.
 
 
-## Interview Resources 
+## Interview Resources
+
 1. InterviewCake
 1. Pramp.com
 1. Leetcode
 
 ## Who am I? What is my story
 
-I am Shruti Kapoor, and I work as a Senior Software Engineer at PayPal. I have been a web developer for over 7 years now. I worked the first two years as a freelance developer, then as co-founder and CTO of my web development startup - World Web Warriors, and then accepted a job as a professional web developer at TELUS Communications in Vancouver, Canada for three years. In 2017, I moved to sunny California, USA and started working as a Software Engineer at PIX Systems, San Francisco. These 7 years have been really rewarding. In all of these years, I still vividly remember the moments when I was totally freaked out by the sheer ambiguity of technical problem I had at hand and having no idea of where to start. 
+I am Shruti Kapoor, and I work as a Senior Software Engineer at PayPal. I have been a web developer for over 7 years now. I worked the first two years as a freelance developer, then as co-founder and CTO of my web development startup - World Web Warriors, and then accepted a job as a professional web developer at TELUS Communications in Vancouver, Canada for three years. In 2017, I moved to sunny California, USA and started working as a Software Engineer at PIX Systems, San Francisco. These 7 years have been really rewarding. In all of these years, I still vividly remember the moments when I was totally freaked out by the sheer ambiguity of technical problem I had at hand and having no idea of where to start.
 
 Being a web developer can be really hard, and it can feel very lonely. There can be days when you will feel like you don't belong here. Honestly, there have been days when I would question my decision of becoming a software engineer, whether I was good enough. But trust me, it will be these moments that will step you up - not only because it will help you persevere, but also it will be  these moments where you will realize the great joy of overcoming your deepest fears and treading deep waters.
 
 You are here, therefore you belong ❤️
 ---
+
