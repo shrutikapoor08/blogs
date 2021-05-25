@@ -31,4 +31,13 @@
   - Start with something you are very confident about. 
 
 
-The feeling you get after having given a great talk is amazing! All the nervousness is worth it.  
+I have spoken at multiple conferences and the nervousness never goes away, but it gradually becomes better with practice. The feeling after having done a talk is amazing and it makes the entire process worth it! Give it shot! You will love it
+
+-- 
+## On a personal note
+
+Last week I organized [JS @ PayPal conference](https://www.youtube.com/channel/UCvNxReTAQudFN4RQth9r_6A), and I gave these tips to first time speakers. Every single  speaker mentioned they would definitely speak again. 
+
+If you want to give a conference talk, [hit me up on Twitter](https://twitter.com/shrutikapoor08) and I will coach you.
+
+
