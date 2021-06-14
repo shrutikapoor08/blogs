@@ -1,15 +1,11 @@
 # What's new in React 18? 
 
-[React 18 alpha version was just announced](<link>). The theme of React 18 is to make the UI more performant by removing janky user experiences. 
+[React 18 alpha version was just announced](https://reactjs.org/blog/2021/06/08/the-plan-for-react-18.html). The theme of React 18 is to make the UI more performant by removing janky user experiences by introducing out of the box features and improvements powered by "concurrent rendering". React 18 introduces no breaking changes which means you can use React 18 in your current app with minimal or no changes!
 
-React 18 introduces no breaking changes.  You can use React 18 in your current app with minimal or no changes.
+Let's take a look at the major new features of React 18: 
 
-The features powered are opt-in and powered by "concurrent rendering".
-
-1. ## Root API:
-React 18 introduces Root API`ReactDOM.createRoot`.
-   Before React 18, we used `ReactDOM.render` to create  <?> . Going forward with React 18, we will use ReactDOM.createRoot to <?> . React 18 concurrency will be provided out of the box with `createRoot.`
-   Your current code with ReactDOM.render will still work, however, it is recommended to start transitioning to `createRoot` as `render` is being marked as `deprecated` starting React 18.
+## Root API (new feature)
+React 18 introduces Root API `ReactDOM.createRoot`. Before React 18, we used `ReactDOM.render` to render a component to the page. Going forward with React 18, we will use ReactDOM.createRoot to create a root, and then pass the root to the render function. The good news is that your current code with `ReactDOM.render` will still work, however, it is recommended to start transitioning to `createRoot` as `render` will be marked `deprecated` starting React 18.
    
 React 17:
 ```jsx
@@ -40,11 +36,11 @@ root.render(<App />);
 
 ```
    
-1. ## Automatic batching ( Out of the box, opt-out available ): 
-   Batching is the process of grouping multiple state updates into one to prevent multiple re-renders. React batched state updates that happened in a single event callback, however state updates that happened outside of the event were not batched. 
-   
-   
-However, with automatic batching, all updates, even within promises, setTimeouts, will be batched. See example - 
+## Automatic batching ( Out of the box, opt-out available): 
+
+Batching is the process of grouping multiple state updates into one to prevent multiple re-renders. Previously, React batched state updates that happened in a single event callback, however state updates that happened outside the event were not batched. 
+
+However, with automatic batching, all updates, even within promises, setTimeouts, will be batched. Check this example - 
 
 ```jsx
 
@@ -61,6 +57,7 @@ However, with automatic batching, all updates, even within promises, setTimeouts
 
     callbackInHandler(); //output 0
     setTimeout(callbackInHandler, 1000); //output 0
+     
     console.log("count outside handler ", count); //output 0
   }
   
@@ -71,11 +68,12 @@ The actual updates happen at the end, and the component renders `3`.
 [See codesanbox link for full example](https://codesandbox.io/s/romantic-pare-efklq?file=/src/index.js:192-695)
 
 
-**Opt-out:** You can opt-out of it using `flushSync`
+**Opt-out:** You can opt-out of automatic batching by using `flushSync`
 
 ## startTransition (opt-in)
  
-`startTransition` can be used to mark UI updates that do not need urgent resources for updating. For eg: when typing in a typeahead field, there are two things happening - a cursor and visual feedback showing that your content is being typed, and a functionality in the background that searches for the data that is typed. 
+`startTransition` can be used to mark UI updates that do not need urgent resources for updating. For eg: when typing in a typeahead field, there are two things happening - a blinking cursor that shows visual feedback of your content being typed, and a search functionality in the background that searches for the data that is typed. 
+
 Showing a visual feedback to the user is important and therefore urgent. Searching is not so urgent, and hence can be marked as non-urgent. This is where `startTransition` comes into play. 
 
 By marking non-urgent UI updates as "transitions" , React will know which updates to prioritize making it easier to optimize rendering and get rid of stale rendering. Updates marked in non-urgent `startTransition` can be interrupted by urgent updates such as clicks or key presses. 
@@ -94,8 +92,7 @@ startTransition(() => {
 });
 ```
 
-
-### How is it different from debouncing or setTimeout?
+ **How is it different from debouncing or setTimeout?**
 
 1. startTransition executes immediately unlike setTimeout. setTimeout has a guaranteed delay, whereas startTransition's delay depends on the speed of the device, and other urgent renders.
 
