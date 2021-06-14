@@ -53,14 +53,3 @@ function SuspenseComponent() {
 
 To learn more, [check out React docs on code splitting](https://reactjs.org/docs/code-splitting.html)
 
-
---- 
-**On a personal note**
-
-I have been working on my design skills with Canva these past few weeks. I created the JSByte image (the header image above) and rebranded the header image of my [YouTube channel](https://www.youtube.com/channel/UCbB6Gh3UPI9lUUnPGYMz2ew). What are your thoughts on it?
-
-
---- 
-Shruti Kapoor
-[More tips on Twitter](https://twitter.com/shrutikapoor08)
-[Hang out with me on Twitch](http://twitch.tv/shrutikapoor)
