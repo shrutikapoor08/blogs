@@ -5,7 +5,7 @@
 Let's take a look at the major new features of React 18: 
 
 ## Root API (new feature)
-React 18 introduces Root API `ReactDOM.createRoot`. Before React 18, we used `ReactDOM.render` to render a component to the page. Going forward with React 18, we will use ReactDOM.createRoot to create a root, and then pass the root to the render function. The good news is that your current code with `ReactDOM.render` will still work, however, it is recommended to start transitioning to `createRoot` as `render` will be marked `deprecated` starting React 18.
+React 18 introduces a new Root API: `ReactDOM.createRoot`. Before React 18, we used `ReactDOM.render` to render a component to the page. Going forward with React 18, we will use `ReactDOM.createRoot` to create a root, and then pass the component to the render function. The good news is that your current code with `ReactDOM.render` will still work, however, it is recommended to start transitioning to `createRoot` as `render` will be marked `deprecated` starting React 18.
    
 React 17:
 ```jsx
@@ -31,7 +31,7 @@ const container = document.getElementById('app');
 // create a root
 const root = ReactDOM.createRoot(container);
 
-//render app to root
+//render component to root
 root.render(<App />);
 
 ```
@@ -72,7 +72,7 @@ The actual updates happen at the end, and the component renders `3`.
 
 ## startTransition (opt-in)
  
-`startTransition` can be used to mark UI updates that do not need urgent resources for updating. For eg: when typing in a typeahead field, there are two things happening - a blinking cursor that shows visual feedback of your content being typed, and a search functionality in the background that searches for the data that is typed. 
+`startTransition` can be used to mark UI updates that do not need urgent resources for updating. For example: when typing in a typeahead field, there are two things happening - a blinking cursor that shows visual feedback of your content being typed, and a search functionality in the background that searches for the data that is typed. 
 
 Showing a visual feedback to the user is important and therefore urgent. Searching is not so urgent, and hence can be marked as non-urgent. This is where `startTransition` comes into play. 
 
