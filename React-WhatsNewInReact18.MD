@@ -1,10 +1,10 @@
 # What's new in React 18? 
 
-[React 18 alpha version was just announced](https://reactjs.org/blog/2021/06/08/the-plan-for-react-18.html). The theme of React 18 is to make the UI more performant by removing janky user experiences by introducing out of the box features and improvements powered by "concurrent rendering". React 18 introduces no breaking changes which means you can use React 18 in your current app with minimal or no changes!
+[React 18 alpha version was just announced](https://reactjs.org/blog/2021/06/08/the-plan-for-react-18.html). The theme of React 18 is to make the UI more performant by removing janky user experiences by introducing out of the box features and improvements powered by "concurrent rendering". React 18 introduces minimal breaking changes.
 
-Let's take a look at the major new features of React 18: 
+Let's take a look at the major updates of React 18: 
 
-## Root API (new feature)
+## Root API 
 React 18 introduces Root API `ReactDOM.createRoot`. Before React 18, we used `ReactDOM.render` to render a component to the page. Going forward with React 18, we will use ReactDOM.createRoot to create a root, and then pass the root to the render function. The good news is that your current code with `ReactDOM.render` will still work, however, it is recommended to start transitioning to `createRoot` as `render` will be marked `deprecated` starting React 18.
    
 React 17:
