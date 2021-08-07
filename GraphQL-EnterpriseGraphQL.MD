@@ -1,7 +1,7 @@
 # Adopting GraphQL in an enterprise
 
 TODO
-- [] thanks
+- [X] thanks
 - [] more articles
 - [] interviews
 
@@ -35,16 +35,21 @@ When we chose GraphQL, we were looking for a technology to help us solve the fol
 
 
 ## How did we begin adopting GraphQL? 
-<TODO> Talk about demo apps. 
+
+Checkout team was the first to pioneer the adoption of GraphQL. We share our journey adopting GraphQL in [Checkout app in this blog post in detail.](https://medium.com/paypal-tech/graphql-a-success-story-for-paypal-checkout-3482f724fb53) The Checkout team showcased their app and the emphasis of orchestration and developer productivity really clicked with our engineering teams. This sparked interest in the entire company, and teams started developing demo apps to utilize GraphQL for their apps. It was the new shiny thing and everybody got excited about the hype, but what stuck out most for the teams was how easy it was to orchestrate downstream APIs and create a unified experience for clients. Without GraphQL, adjacencies will have to know so much of PayPal's internal stuff to pull off an operation. With GraphQL, all of the complexity could be hidden and clients wouldn't have to worry about figuring out which piece connects where. 
+
+Teams started building products, presented them in tech showcase, and got other people excited too. Soon, everybody was curious. Once we got the leadership onboard, we were really able to take it off. 
 
 PayPal has an extensive suite of REST APIs that power the core functionality of apps and sits very close to database. GraphQL is used as an orchestration layer in our apps. It sits between the frontend UI app and backend API layer acting as a backend for frontend (BFF). New features can be built directly within the GraphQL layer. Some teams may choose to use GraphQL as a pure orchestration layer, while some teams use GraphQL layer as a business logic layer. 
 
+## How did we scale adoption of GraphQL? 
+
 Since the adoption of GraphQL in Checkout, most teams started building GraphQL layers independently on smaller apps. This led to multiple graphs within the company. Having multiple graphs makes schema sharing harder. We tried to do schema stitching to make a single graph. We are now adopting a one graph approach using Apollo Federation where we build a graphql gateway thereby unifying all our graphs into one single endpoint.
 
-As we started scaling our GraphQL adoption up, we realized  that every app was trying to solve its own GraphQL problems - often everyone was solving the same problem indepently leading to a lot of reinventing the wheel. We realized there was a need to unify these efforts under one umbrella and hence, we established a standards body. We provided support for standard tooling, front tier and mid tier sample apps, error handling techniques, learning resources. Having a standards set was great, but we noticed that the individual graphs were deviating from the correct way of authenticating. We lost a little control of auth rails in individual graphs. We wanted to provide a centralized point of entry, govern schemas teogether, model the data in a global way and provide a way to resuse types. This is where the motivation to build a one graphql gateway. <TODO> 
+As we started scaling our GraphQL adoption up, we realized  that every app was trying to solve its own GraphQL problems - often everyone was solving the same problem independently leading to a lot of reinventing the wheel. We realized there was a need to unify these efforts under one umbrella and hence, we established a standards body. We provided support for standard tooling, front tier and mid tier sample apps, error handling techniques, learning resources. Having a standards set was great, but we noticed that the individual graphs were deviating from the correct way of authenticating. We lost a little control of auth rails in individual graphs. We wanted to provide a centralized point of entry, govern schemas teogether, model the data in a global way and provide a way to resuse types. This is where the motivation to build a one graphql gateway. <TODO> 
 
 
-<TODO>Standards from PPASS
+We built tooling to help support GraphQL adoption - 
  
 1. Set of standards.: naming conventions. error handling
 2. Common libraries
@@ -57,13 +62,10 @@ As we started scaling our GraphQL adoption up, we realized  that every app was t
 3. Template boilerplate applications
     1. front end
     2. back end
-    
-
 1. Error conventions: GraphQL specification doesn’t restrict or specify using appropriate HTTP status codes to express the outcome of an operation. PayPal GraphQL servers return everything as a 200 unless something went terribly wrong. The information on the error itself is added to custom properties within the default errors object. 
 2. Since GraphQL layers are used as orchestration layers, all requests must have a special directive to describe all authorization requirements for queries, mutations and fields. 
-3. PPASS GraphQL standards for defining GraphQL APIs: [https://ppaas/docs/standards/graphql_api_design_standards](https://ppaas/docs/standards/graphql_api_design_standards)
+3. We have established GraphQL standards for defining GraphQL APIs internally.
 4. Learning resources to help onboard teams onto GraphQL.
-5. Moving to one graph using Apollo Federation
 
 ## What advantages are we seeing with GraphQL adoption?
 
@@ -71,13 +73,14 @@ As we started scaling our GraphQL adoption up, we realized  that every app was t
     1. GraphQL Playground to play around with the API and explore documentation at the same time without having to check out any additional tools such as Postman.
     2. Since all operations (queries and mutations) are at the same endpoint, it makes it much easier to explore all operations that are supported by the API
     3. Building UIs in parallel with GraphQL API helps increase team collaboration. Since GraphQL schema needs to be built upfront, backend and frontend engineers work thereby reducing silos.
-2. **Analytics**: instrumentation on how long a single request for a particular field took
-3. **Hiring**: everybody is really excited about GraphQL and it has been easier to attract people. get people excited about PayPal and put us back on the map. 
 4. **Paradigm shift:** Since GraphQL mandates a design first approach, our thinking changed and we started putting the needs of the clients first. We thought about GraphQL in context of enabling business use-cases and built out API with the customer in mind in contrast to other API Design paradigms that allows code first.
-5. We are able to get features shipped faster. We were able to get rid of a lot of plumbing that made it harder to provide feature updates and keep feature parity. Before, we had to ship out an SDK in every language that our merchant worked in. Now, we can provide one single GraphQL endpoint that merchants can integrate with without having to worry about the language they are using.  
+5. **Ship faster**: We are able to get features shipped faster. We were able to get rid of a lot of plumbing that made it harder to provide feature updates and keep feature parity. Before, we had to ship out an SDK in every language that our merchant worked in. Now, we can provide one single GraphQL endpoint that merchants can integrate with without having to worry about the language they are using.
+6. **Simply unification**: Internal clients and adjancies no longer had to worry about the complexity of the internal systems and figure out which API to call. The GraphQL layer hid the complexity behind the scenes.
+2. **Analytics**: instrumentation on how long a single request for a particular field took
+3. **Exposure and hiring**: everybody in the community is really excited about GraphQL and it has helped us attract talent to PayPal. Our teammates are excited to share their learnings in the community and have been speaking at conferences, writing blog posts and making instructional resources. <TODO> Link 
     
     
-## What challenges are we still struggling with?
+## What challenges are we facing?
 <TODO>
 
 1. We are still working to create a standardized approach to challenges in the GraphQL specification technology such as error handling, authentication, file handling, batch processing.
@@ -93,7 +96,7 @@ To convince our leadership, we knew that it wasn't enough to focus on performanc
 We demonstrated our GraphQL helps improve the productivity of internal and external developers, how GraphQL helped reduce the time to ship features in an api. With GraphQL, we didn't have to work on multiple SDKs for each platform. We built the API once, and we were done. Without GraphQL, we had no idea which fields were being used by the merchants and which endpoints were called. We did not have instrumentation on KPIs such as first integration to production. With GraphQL, we were able to demonstrate our learnings, instrumentations and field level insights. 
 
 
-## How to start adoption?
+## How can you start adoption?
 1. In the beginning when speculating whether GraphQL is the right technology, it is helpful to build a demo app that can demonstrate our GraphQL can fit in your enterprise architecture. 
 2. Bring the team with you - demo your app and showcase the benefits of using GraphQL, your experience of adopting GraphQL, the advantages you have seen and the struggles you are facing to help others in the company.
 3. Setup enterprise for success - setup a working group that will help to establish standards, setup learning resources, provide guidance, build tooling and support for GraphQL 
